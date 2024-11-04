@@ -1,0 +1,2913 @@
+Using pre-set license
+Built from '6000.0/release' branch; Version is '6000.0.25f1 (4859ab7b5a49) revision 4741547'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16219 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Calvin/Documents/GitHub/CMPM80k-Game/CMPM80 Final
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+58680
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/Calvin/Documents/GitHub/CMPM80k-Game/CMPM80 Final
+C:/Users/Calvin/Documents/GitHub/CMPM80k-Game/CMPM80 Final
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [87092]  Target information:
+
+Player connection [87092]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4107171782 [EditorId] 4107171782 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-A9PMBB5K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [87092]  * "[IP] 172.25.160.1 [Port] 0 [Flags] 2 [Guid] 4107171782 [EditorId] 4107171782 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-A9PMBB5K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [87092]  * "[IP] 10.0.0.134 [Port] 0 [Flags] 2 [Guid] 4107171782 [EditorId] 4107171782 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-A9PMBB5K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [87092] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [87092] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 4.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.25f1 (4859ab7b5a49)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Calvin/Documents/GitHub/CMPM80k-Game/CMPM80 Final/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 Super with Max-Q Design (ID=0x1ed1)
+    Vendor:   NVIDIA
+    VRAM:     7989 MB
+    Driver:   32.0.15.5612
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005627 seconds.
+- Loaded All Assemblies, in  0.461 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.339 seconds
+Domain Reload Profiling: 796ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (185ms)
+		LoadAssemblies (134ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (182ms)
+			TypeCache.Refresh (180ms)
+				TypeCache.ScanAssembly (166ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (339ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (291ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (181ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.187 seconds
+Refreshing native plugins compatible for Editor in 2.04 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.999 seconds
+Domain Reload Profiling: 2178ms
+	BeginReloadAssembly (427ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (654ms)
+		LoadAssemblies (442ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (324ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (193ms)
+			BuildScriptInfoCaches (97ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (999ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (741ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (506ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.11 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 206 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6514 unused Assets / (4.5 MB). Loaded Objects now: 7292.
+Memory consumption went from 199.4 MB to 194.9 MB.
+Total: 9.219800 ms (FindLiveObjects: 0.729200 ms CreateObjectMapping: 1.058100 ms MarkObjects: 4.974600 ms  DeleteObjects: 2.455500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 218095.010738 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Traps/Arrow
+  artifactKey: Guid(7234a5d23dcf2f041ade075d25722adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Traps/Arrow using Guid(7234a5d23dcf2f041ade075d25722adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c99073f2f730dd880fa8ea85085caad0') in 0.0070581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.689667 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1
+  artifactKey: Guid(7a12092f6ff79404e9e7c4977fd075b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1 using Guid(7a12092f6ff79404e9e7c4977fd075b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb726fc9309b8dd5c825b1b0e62740ca') in 0.0006185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.223207 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Break (28x24).png
+  artifactKey: Guid(79022f0c1a1c5ce42bcba2ca880ef7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Break (28x24).png using Guid(79022f0c1a1c5ce42bcba2ca880ef7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed9dfa4054992b4c654c0525a4cbb93f') in 0.107943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.629531 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint
+  artifactKey: Guid(d0194b0f37632844cbe5f12a0c2f7107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint using Guid(d0194b0f37632844cbe5f12a0c2f7107) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c129405ab8111c18b1d3a50e915274bc') in 0.0006559 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050599 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png
+  artifactKey: Guid(27a107940057e8743a507269b18a691a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png using Guid(27a107940057e8743a507269b18a691a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '123ca9cce54a9d22b544cb8f3e51ed3e') in 0.0422211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.617357 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c613ed367a7156f55db83ec907a37eb') in 1.2996921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIEnumField.prefab
+  artifactKey: Guid(988db55689193434fb0b3b89538f978f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIEnumField.prefab using Guid(988db55689193434fb0b3b89538f978f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5225a0f001fd6ce85f3fa89eaa97f072') in 0.0330647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIToggle.prefab
+  artifactKey: Guid(ce347ad101f41ee4ab5c3fbc0ea447db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIToggle.prefab using Guid(ce347ad101f41ee4ab5c3fbc0ea447db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e9101e75d6fa2964a5b5096c7d12756') in 0.0132437 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
+  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ff79a2c911902e9a3c8f8a7fbd0d329') in 0.033106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector3.prefab
+  artifactKey: Guid(94afea5f242d72547979595ba963f335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector3.prefab using Guid(94afea5f242d72547979595ba963f335) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10f6ac71407d6727972d37daf555fb96') in 0.0160806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIObjectList.prefab
+  artifactKey: Guid(ad83bc56407925d44a77a5bd01cd6783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIObjectList.prefab using Guid(ad83bc56407925d44a77a5bd01cd6783) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39ef9a462b060b578c012227d5f4fdd3') in 0.0079666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIColor.prefab
+  artifactKey: Guid(77c185820dd1a464eac89cae3abccddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIColor.prefab using Guid(77c185820dd1a464eac89cae3abccddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '357603693c11329f5acb0de7d86a97bb') in 0.0121121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 82
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector4.prefab
+  artifactKey: Guid(d47f009476100f545971a81ede14c750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector4.prefab using Guid(d47f009476100f545971a81ede14c750) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '373e7ecc4340bc7798de691edaf0546a') in 0.0093429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 78
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVBox.prefab
+  artifactKey: Guid(ca3e294656861a64b8aeeb9f916da0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVBox.prefab using Guid(ca3e294656861a64b8aeeb9f916da0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7d313a0392a8329c0847bef1ab14f14') in 0.0044803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.153398 seconds.
+  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
+  artifactKey: Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '260a3f2135b8570c0d1d6a5be2ba8f71') in 0.1398905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 386.726424 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df031713560c073a99b1a71fcaf9dd0a') in 0.4055904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/64 Swords/Swords 64x64 WHITE OUTLINE SHADE.png
+  artifactKey: Guid(5086f7f9cf02c27478fdeda4cd78894a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 WHITE OUTLINE SHADE.png using Guid(5086f7f9cf02c27478fdeda4cd78894a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1763cd53c7e5d137c71683f144fa0908') in 0.1393895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.503303 seconds.
+  path: Assets/64 Swords/Materials/Swords 64x64.png
+  artifactKey: Guid(0c8391968139e1345b7a7734385763f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Materials/Swords 64x64.png using Guid(0c8391968139e1345b7a7734385763f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69d1131f385b3282635eb414be988ceb') in 0.0200763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/64 Swords/Materials/Swords 64x64 WHITE OUTLINE SHADE.png
+  artifactKey: Guid(4fd946b41a28cd64bb7104b3adf513e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Materials/Swords 64x64 WHITE OUTLINE SHADE.png using Guid(4fd946b41a28cd64bb7104b3adf513e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78c194c809925b74ea99a32b26d95173') in 0.0204928 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.157891 seconds.
+  path: Assets/64 Swords/Documentation.pdf
+  artifactKey: Guid(2c6557aa5893e21419717c5438923094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Documentation.pdf using Guid(2c6557aa5893e21419717c5438923094) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '434b954556e9f35fb0a1dc8a92f98dba') in 0.0011444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.524706 seconds.
+  path: Assets/64 Swords/Demo.unity
+  artifactKey: Guid(c8197fd4ced3807419451c360628531b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Demo.unity using Guid(c8197fd4ced3807419451c360628531b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebcf372fefde5b3e4acd872be216bb51') in 0.0007884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.273502 seconds.
+  path: Assets/64 Swords/Materials
+  artifactKey: Guid(e8a92293d41dded45b2387f97e3176e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Materials using Guid(e8a92293d41dded45b2387f97e3176e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2034862ea1745721aefbd9aa2bdc2b5') in 0.0005436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.337920 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d4254d4ee332ee65e44572eff562328') in 0.0006208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 638.028277 seconds.
+  path: Assets/Scenes/SwordSlash Downwards.anim
+  artifactKey: Guid(138e514655136c640baf13985da75273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordSlash Downwards.anim using Guid(138e514655136c640baf13985da75273) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cb756fc395dd1ea59938341a529360e') in 0.0031229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.460653 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33d74ddca2d4cb8ed7cdb1e7d5132118') in 0.0012724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 706.034211 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'acbbb41433226418fb9352961c1e30e6') in 0.107599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.216819 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84e7536c5ae02013accfbf66b9db6f05') in 0.3436216 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.369094 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18e4da7a021b0f0ab9f93de479984b47') in 0.2570631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.189858 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '036986d79fe41abaaac9232b5ecba4ac') in 0.2553454 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.725376 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2b7de2743347a9e629173b81f4a90a0') in 0.3333497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.528128 seconds.
+  path: Assets/64 Swords/Swords 64x64 TRANSPARENT.png
+  artifactKey: Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/64 Swords/Swords 64x64 TRANSPARENT.png using Guid(545f9c74323fe914c829180b85afb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d37d766f26e40979f32b6eef5e5ba56') in 0.2366952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 445.353407 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a86639893f89003dcc915be6c8d7da05') in 0.0013069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.192489 seconds.
+  path: Assets/Scenes/Example Sword.controller
+  artifactKey: Guid(bd040de2d82c9fb4f8b2d74780fc95f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Example Sword.controller using Guid(bd040de2d82c9fb4f8b2d74780fc95f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b13cd6139cd08d388a1d8c99d84a51a') in 0.0035737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.736400 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(7cd0377fe765477479fe6c35cf459a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(7cd0377fe765477479fe6c35cf459a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2cb4b7adfff4fed0ae897572cfdbd55d') in 0.0010866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 525.997726 seconds.
+  path: Assets/Scenes/Hilt of Blade.controller
+  artifactKey: Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hilt of Blade.controller using Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af3aa814354b581948dadae58f05738b') in 0.0018597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.350048 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf2a61727ea10bca125256579bd3e942') in 0.0012762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 374.021784 seconds.
+  path: Assets/Scenes/Hilt of Blade.controller
+  artifactKey: Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hilt of Blade.controller using Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71a3f7d70313d1f7c73b7488d81229c0') in 0.0025712 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.4 MB). Loaded Objects now: 7437.
+Memory consumption went from 173.2 MB to 168.7 MB.
+Total: 17.911800 ms (FindLiveObjects: 1.354900 ms CreateObjectMapping: 1.132300 ms MarkObjects: 12.457900 ms  DeleteObjects: 2.964600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.535 seconds
+Refreshing native plugins compatible for Editor in 3.20 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.119 seconds
+Domain Reload Profiling: 4650ms
+	BeginReloadAssembly (682ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (127ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (232ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (2755ms)
+		LoadAssemblies (2602ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (286ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (248ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1120ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (778ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (595ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.5 MB). Loaded Objects now: 7338.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 12.102300 ms (FindLiveObjects: 1.048700 ms CreateObjectMapping: 1.520500 ms MarkObjects: 6.500800 ms  DeleteObjects: 3.030900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 209.127505 seconds.
+  path: Assets/Scenes/SwordController.cs
+  artifactKey: Guid(31ac1e462790e44448bfc511b024cbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordController.cs using Guid(31ac1e462790e44448bfc511b024cbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e13d6e426a2180fc4b9acae2306b9369') in 0.0310012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.6 MB). Loaded Objects now: 7338.
+Memory consumption went from 171.6 MB to 167.0 MB.
+Total: 22.355600 ms (FindLiveObjects: 1.103000 ms CreateObjectMapping: 2.135800 ms MarkObjects: 11.635700 ms  DeleteObjects: 7.479400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6501 unused Assets / (5.2 MB). Loaded Objects now: 7337.
+Memory consumption went from 171.6 MB to 166.4 MB.
+Total: 12.955600 ms (FindLiveObjects: 0.891800 ms CreateObjectMapping: 1.619700 ms MarkObjects: 6.126600 ms  DeleteObjects: 4.315700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.071 seconds
+Refreshing native plugins compatible for Editor in 3.17 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.070 seconds
+Domain Reload Profiling: 2137ms
+	BeginReloadAssembly (240ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (711ms)
+		LoadAssemblies (541ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (287ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (260ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1071ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (730ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (554ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6512 unused Assets / (4.3 MB). Loaded Objects now: 7339.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 10.043600 ms (FindLiveObjects: 0.867000 ms CreateObjectMapping: 1.207500 ms MarkObjects: 5.154800 ms  DeleteObjects: 2.813200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.4 MB). Loaded Objects now: 7340.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 9.721300 ms (FindLiveObjects: 0.747100 ms CreateObjectMapping: 1.087300 ms MarkObjects: 5.162100 ms  DeleteObjects: 2.724000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 120.656609 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '477bd47c432c3b7b93c9831c56498466') in 0.0223505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.959 seconds
+Refreshing native plugins compatible for Editor in 2.51 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.224 seconds
+Domain Reload Profiling: 2178ms
+	BeginReloadAssembly (246ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (608ms)
+		LoadAssemblies (444ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (248ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1225ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (851ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (645ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.0 MB). Loaded Objects now: 7342.
+Memory consumption went from 171.5 MB to 167.4 MB.
+Total: 10.675100 ms (FindLiveObjects: 0.943600 ms CreateObjectMapping: 1.616800 ms MarkObjects: 5.503200 ms  DeleteObjects: 2.610300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.3 MB). Loaded Objects now: 7342.
+Memory consumption went from 171.6 MB to 167.3 MB.
+Total: 15.000900 ms (FindLiveObjects: 1.228400 ms CreateObjectMapping: 1.802700 ms MarkObjects: 8.490800 ms  DeleteObjects: 3.477700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 33.823288 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db96f175e3bfe2cc7ae9ded6c31b2249') in 0.0139236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.5 MB). Loaded Objects now: 7342.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 13.870300 ms (FindLiveObjects: 0.841200 ms CreateObjectMapping: 1.661600 ms MarkObjects: 7.835600 ms  DeleteObjects: 3.530100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 59.830346 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc7bb776a9de91be9d367f339aee2d3d') in 0.0057344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.013 seconds
+Refreshing native plugins compatible for Editor in 2.23 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.162 seconds
+Domain Reload Profiling: 2169ms
+	BeginReloadAssembly (267ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (646ms)
+		LoadAssemblies (474ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (298ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (270ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1162ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (802ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (610ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 2.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7344.
+Memory consumption went from 171.5 MB to 167.1 MB.
+Total: 9.949800 ms (FindLiveObjects: 0.871000 ms CreateObjectMapping: 1.175200 ms MarkObjects: 5.109600 ms  DeleteObjects: 2.792800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.419022 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0047427 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005007 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005293 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0008244 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006982 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005623 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005466 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005482 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005473 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005628 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005904 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005211 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.000543 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005365 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005736 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006489 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0004853 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.00052 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005406 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005004 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.000571 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005314 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005193 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005268 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006154 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005489 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005592 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.000613 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005544 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005004 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005245 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006343 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005373 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005476 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005261 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006233 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005633 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005361 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006568 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005769 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005622 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005745 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005296 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006534 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005852 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006689 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007237 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.000537 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0006472 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005053 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0004884 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005089 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005224 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005934 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0005549 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+  ERROR: Build asset version error: assets/scenes/swordcontroler.cs in SourceAssetDB has modification time of '2024-11-04T08:13:28.0629076Z' while content on disk has modification time of '2024-11-04T08:13:31.0717828Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016695 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65cb345d0970868fd0454a43a82f7f0b') in 0.0007535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.946 seconds
+Refreshing native plugins compatible for Editor in 2.23 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.241 seconds
+Domain Reload Profiling: 2182ms
+	BeginReloadAssembly (235ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (613ms)
+		LoadAssemblies (446ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (258ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1241ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (853ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (643ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.5 MB). Loaded Objects now: 7346.
+Memory consumption went from 171.5 MB to 167.0 MB.
+Total: 11.356400 ms (FindLiveObjects: 1.109300 ms CreateObjectMapping: 1.378300 ms MarkObjects: 5.706000 ms  DeleteObjects: 3.161200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.001 seconds
+Refreshing native plugins compatible for Editor in 3.24 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.260 seconds
+Domain Reload Profiling: 2257ms
+	BeginReloadAssembly (262ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (642ms)
+		LoadAssemblies (463ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (303ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (271ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1260ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (839ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (626ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 5.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7348.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 22.051500 ms (FindLiveObjects: 1.409200 ms CreateObjectMapping: 2.187000 ms MarkObjects: 12.531500 ms  DeleteObjects: 5.921400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.021 seconds
+Refreshing native plugins compatible for Editor in 2.34 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.127 seconds
+Domain Reload Profiling: 2143ms
+	BeginReloadAssembly (274ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (633ms)
+		LoadAssemblies (495ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (269ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (244ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1127ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (766ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (581ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 2.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7350.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 9.075600 ms (FindLiveObjects: 0.792200 ms CreateObjectMapping: 1.147200 ms MarkObjects: 4.768700 ms  DeleteObjects: 2.366200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 193.098235 seconds.
+  path: Assets/Scenes/Hilt of Blade.controller
+  artifactKey: Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hilt of Blade.controller using Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14de8db9ad5e91dc465bfa0ca57132db') in 0.0435985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.954 seconds
+Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.312 seconds
+Domain Reload Profiling: 2261ms
+	BeginReloadAssembly (244ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (601ms)
+		LoadAssemblies (451ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (270ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (245ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1313ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (886ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (666ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7352.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 10.366700 ms (FindLiveObjects: 0.871100 ms CreateObjectMapping: 1.232100 ms MarkObjects: 5.376000 ms  DeleteObjects: 2.886000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 162.707391 seconds.
+  path: Assets/Scenes/Hilt of Blade.controller
+  artifactKey: Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hilt of Blade.controller using Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af4ffa95e23255578883e80cd181567a') in 0.031838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.975 seconds
+Refreshing native plugins compatible for Editor in 2.38 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.298 seconds
+Domain Reload Profiling: 2268ms
+	BeginReloadAssembly (244ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (622ms)
+		LoadAssemblies (447ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (287ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (261ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1298ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (912ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (702ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7354.
+Memory consumption went from 171.5 MB to 167.3 MB.
+Total: 12.057700 ms (FindLiveObjects: 0.857700 ms CreateObjectMapping: 1.507100 ms MarkObjects: 6.198600 ms  DeleteObjects: 3.493000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 102.811459 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cd101fdc7e5a34df7fcaa5c2e71b47f') in 0.0313174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.973 seconds
+Refreshing native plugins compatible for Editor in 3.05 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.262 seconds
+Domain Reload Profiling: 2231ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (612ms)
+		LoadAssemblies (451ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (284ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (259ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1262ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (864ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (651ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7356.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 12.259600 ms (FindLiveObjects: 1.084500 ms CreateObjectMapping: 1.556700 ms MarkObjects: 6.211200 ms  DeleteObjects: 3.405100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.979 seconds
+Refreshing native plugins compatible for Editor in 2.22 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.238 seconds
+Domain Reload Profiling: 2214ms
+	BeginReloadAssembly (272ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (610ms)
+		LoadAssemblies (471ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (252ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1239ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (853ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (651ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7358.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 10.518300 ms (FindLiveObjects: 0.805500 ms CreateObjectMapping: 1.413600 ms MarkObjects: 5.434000 ms  DeleteObjects: 2.864000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.957 seconds
+Refreshing native plugins compatible for Editor in 2.20 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.247 seconds
+Domain Reload Profiling: 2200ms
+	BeginReloadAssembly (252ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (606ms)
+		LoadAssemblies (451ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (273ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (250ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1248ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (860ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (645ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7360.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 10.635600 ms (FindLiveObjects: 0.937900 ms CreateObjectMapping: 1.306500 ms MarkObjects: 5.616900 ms  DeleteObjects: 2.773000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.958 seconds
+Refreshing native plugins compatible for Editor in 2.97 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.250 seconds
+Domain Reload Profiling: 2202ms
+	BeginReloadAssembly (244ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (596ms)
+		LoadAssemblies (426ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (286ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (262ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1250ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (865ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (648ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 2.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7362.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 10.743400 ms (FindLiveObjects: 0.816000 ms CreateObjectMapping: 1.474600 ms MarkObjects: 5.427700 ms  DeleteObjects: 3.023900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.925 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.247 seconds
+Domain Reload Profiling: 2166ms
+	BeginReloadAssembly (229ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (599ms)
+		LoadAssemblies (433ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (275ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (251ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1248ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (858ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (652ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.8 MB). Loaded Objects now: 7364.
+Memory consumption went from 171.5 MB to 166.8 MB.
+Total: 11.711700 ms (FindLiveObjects: 0.847100 ms CreateObjectMapping: 1.515500 ms MarkObjects: 5.923300 ms  DeleteObjects: 3.424300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.979 seconds
+Refreshing native plugins compatible for Editor in 3.49 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.244 seconds
+Domain Reload Profiling: 2216ms
+	BeginReloadAssembly (246ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (627ms)
+		LoadAssemblies (447ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (303ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (279ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1245ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (854ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (650ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 2.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7366.
+Memory consumption went from 171.5 MB to 167.1 MB.
+Total: 10.488300 ms (FindLiveObjects: 0.889300 ms CreateObjectMapping: 1.395600 ms MarkObjects: 5.498600 ms  DeleteObjects: 2.703800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.911 seconds
+Refreshing native plugins compatible for Editor in 2.46 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.280 seconds
+Domain Reload Profiling: 2186ms
+	BeginReloadAssembly (223ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (592ms)
+		LoadAssemblies (438ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (264ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (239ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1280ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (865ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (645ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 2.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (3.9 MB). Loaded Objects now: 7368.
+Memory consumption went from 171.6 MB to 167.7 MB.
+Total: 13.440200 ms (FindLiveObjects: 0.903600 ms CreateObjectMapping: 1.947000 ms MarkObjects: 7.377900 ms  DeleteObjects: 3.210500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.946 seconds
+Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.266 seconds
+Domain Reload Profiling: 2207ms
+	BeginReloadAssembly (230ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (613ms)
+		LoadAssemblies (438ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (260ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1267ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (872ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (649ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7370.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 10.200300 ms (FindLiveObjects: 0.796500 ms CreateObjectMapping: 1.287400 ms MarkObjects: 5.382100 ms  DeleteObjects: 2.733300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 349.327620 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4315e2ee292a7a2a3babaaf0824c06d4') in 0.0712022 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.962 seconds
+Refreshing native plugins compatible for Editor in 2.01 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.340 seconds
+Domain Reload Profiling: 2298ms
+	BeginReloadAssembly (244ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (616ms)
+		LoadAssemblies (453ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (278ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (249ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1340ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (928ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (707ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.2 MB). Loaded Objects now: 7372.
+Memory consumption went from 171.6 MB to 167.3 MB.
+Total: 11.806700 ms (FindLiveObjects: 0.912000 ms CreateObjectMapping: 1.529200 ms MarkObjects: 6.330200 ms  DeleteObjects: 3.033300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 120.880674 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1e20b7fca1c78b9d98af7a38a4dea44') in 0.0300465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.118859 seconds.
+  path: Assets/Scenes/Hilt of Blade.controller
+  artifactKey: Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hilt of Blade.controller using Guid(1dfc65cb4a1876d4193d3682292e4fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a2bda2b5a462abe2ff92631c948dc4') in 0.0028995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.954 seconds
+Refreshing native plugins compatible for Editor in 2.41 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.357 seconds
+Domain Reload Profiling: 2306ms
+	BeginReloadAssembly (253ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (607ms)
+		LoadAssemblies (447ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (276ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (251ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1358ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (908ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (687ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.5 MB). Loaded Objects now: 7374.
+Memory consumption went from 171.6 MB to 167.1 MB.
+Total: 11.317200 ms (FindLiveObjects: 1.066000 ms CreateObjectMapping: 1.407100 ms MarkObjects: 5.621100 ms  DeleteObjects: 3.221500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.992 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.260 seconds
+Domain Reload Profiling: 2246ms
+	BeginReloadAssembly (239ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (640ms)
+		LoadAssemblies (456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (300ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (277ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1261ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (867ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (642ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7376.
+Memory consumption went from 171.5 MB to 167.2 MB.
+Total: 11.256600 ms (FindLiveObjects: 0.796900 ms CreateObjectMapping: 1.393800 ms MarkObjects: 5.898800 ms  DeleteObjects: 3.165300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 74.879878 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62953bf5e70c69d25a7d922dc977309c') in 0.0268269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.945 seconds
+Refreshing native plugins compatible for Editor in 2.20 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.269 seconds
+Domain Reload Profiling: 2208ms
+	BeginReloadAssembly (247ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (603ms)
+		LoadAssemblies (448ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (276ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (245ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1269ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (866ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (654ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 2.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7378.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 11.328100 ms (FindLiveObjects: 0.983700 ms CreateObjectMapping: 1.440700 ms MarkObjects: 5.747800 ms  DeleteObjects: 3.154700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.940 seconds
+Refreshing native plugins compatible for Editor in 2.66 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.248 seconds
+Domain Reload Profiling: 2184ms
+	BeginReloadAssembly (230ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (603ms)
+		LoadAssemblies (442ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (248ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1248ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (863ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (656ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.1 MB). Loaded Objects now: 7380.
+Memory consumption went from 171.6 MB to 167.5 MB.
+Total: 10.385500 ms (FindLiveObjects: 0.803500 ms CreateObjectMapping: 1.587700 ms MarkObjects: 5.398100 ms  DeleteObjects: 2.594200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.983 seconds
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.255 seconds
+Domain Reload Profiling: 2233ms
+	BeginReloadAssembly (246ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (637ms)
+		LoadAssemblies (476ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (280ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (253ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1255ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (862ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (651ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7382.
+Memory consumption went from 171.6 MB to 167.1 MB.
+Total: 10.611800 ms (FindLiveObjects: 0.869400 ms CreateObjectMapping: 1.695000 ms MarkObjects: 5.317400 ms  DeleteObjects: 2.729300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.942 seconds
+Refreshing native plugins compatible for Editor in 2.59 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.260 seconds
+Domain Reload Profiling: 2198ms
+	BeginReloadAssembly (249ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (447ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (262ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (238ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1261ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (877ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (662ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.50 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.2 MB). Loaded Objects now: 7384.
+Memory consumption went from 171.6 MB to 167.4 MB.
+Total: 12.127700 ms (FindLiveObjects: 0.851400 ms CreateObjectMapping: 1.527100 ms MarkObjects: 6.579300 ms  DeleteObjects: 3.168500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.984 seconds
+Refreshing native plugins compatible for Editor in 2.06 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.242 seconds
+Domain Reload Profiling: 2222ms
+	BeginReloadAssembly (259ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (614ms)
+		LoadAssemblies (470ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (278ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (254ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1242ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (852ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (654ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (5.1 MB). Loaded Objects now: 7386.
+Memory consumption went from 171.5 MB to 166.4 MB.
+Total: 13.846300 ms (FindLiveObjects: 1.068700 ms CreateObjectMapping: 1.442900 ms MarkObjects: 7.179600 ms  DeleteObjects: 4.153800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 423.285778 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5e2284f3feacf3636f02a9bb498a642') in 0.0410755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.945 seconds
+Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.262 seconds
+Domain Reload Profiling: 2202ms
+	BeginReloadAssembly (251ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (598ms)
+		LoadAssemblies (453ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (267ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (243ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1262ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (871ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (656ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7388.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 10.915300 ms (FindLiveObjects: 0.860700 ms CreateObjectMapping: 1.260900 ms MarkObjects: 5.773700 ms  DeleteObjects: 3.018600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.977 seconds
+Refreshing native plugins compatible for Editor in 2.86 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.276 seconds
+Domain Reload Profiling: 2246ms
+	BeginReloadAssembly (254ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (610ms)
+		LoadAssemblies (456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (277ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (252ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (869ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (655ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.4 MB). Loaded Objects now: 7390.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 10.385500 ms (FindLiveObjects: 0.836000 ms CreateObjectMapping: 1.253300 ms MarkObjects: 5.508100 ms  DeleteObjects: 2.786200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.929 seconds
+Refreshing native plugins compatible for Editor in 2.75 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.273 seconds
+Domain Reload Profiling: 2199ms
+	BeginReloadAssembly (241ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (595ms)
+		LoadAssemblies (432ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (277ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (254ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1274ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (876ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (664ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 3.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7392.
+Memory consumption went from 171.6 MB to 167.2 MB.
+Total: 11.995300 ms (FindLiveObjects: 0.898400 ms CreateObjectMapping: 1.710500 ms MarkObjects: 6.494900 ms  DeleteObjects: 2.890200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.2 MB). Loaded Objects now: 7392.
+Memory consumption went from 171.7 MB to 167.6 MB.
+Total: 11.902000 ms (FindLiveObjects: 0.945500 ms CreateObjectMapping: 1.620500 ms MarkObjects: 6.067700 ms  DeleteObjects: 3.266800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 304.272510 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c5fd090871e91dc4ce981c2f66a794c') in 0.0204017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.973 seconds
+Refreshing native plugins compatible for Editor in 2.20 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.216 seconds
+Domain Reload Profiling: 2184ms
+	BeginReloadAssembly (259ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (610ms)
+		LoadAssemblies (446ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (252ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1217ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (849ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (648ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 2.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7394.
+Memory consumption went from 171.6 MB to 167.3 MB.
+Total: 10.891800 ms (FindLiveObjects: 0.857100 ms CreateObjectMapping: 1.225800 ms MarkObjects: 5.480800 ms  DeleteObjects: 3.327000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.654457 seconds.
+  path: Assets/Scenes/Blade Slash.anim
+  artifactKey: Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Blade Slash.anim using Guid(fb506d6f146d0fc4db1efc2ccbb4939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc0376ec4a29d66067243d883a917459') in 0.0281827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.398511 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ff26911de69a423eea998846fb62581') in 0.0006945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.938 seconds
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.285 seconds
+Domain Reload Profiling: 2219ms
+	BeginReloadAssembly (245ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (597ms)
+		LoadAssemblies (425ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (286ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (262ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1286ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (906ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (697ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.1 MB). Loaded Objects now: 7396.
+Memory consumption went from 171.5 MB to 167.4 MB.
+Total: 10.967300 ms (FindLiveObjects: 0.851300 ms CreateObjectMapping: 1.424200 ms MarkObjects: 6.062400 ms  DeleteObjects: 2.628300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6502 unused Assets / (4.1 MB). Loaded Objects now: 7396.
+Memory consumption went from 171.7 MB to 167.6 MB.
+Total: 16.130100 ms (FindLiveObjects: 1.189800 ms CreateObjectMapping: 1.779100 ms MarkObjects: 9.379600 ms  DeleteObjects: 3.780000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 98.201749 seconds.
+  path: Assets/Scenes/SwordControler.cs
+  artifactKey: Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwordControler.cs using Guid(a7e3a5b543e58d14cbc4ab2b712b94a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '255b1b87d6dbe579eeec88654ff656a4') in 0.0122973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.948 seconds
+Refreshing native plugins compatible for Editor in 2.28 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.268 seconds
+Domain Reload Profiling: 2210ms
+	BeginReloadAssembly (248ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (593ms)
+		LoadAssemblies (433ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (276ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (250ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1269ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (898ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (685ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.5 MB). Loaded Objects now: 7398.
+Memory consumption went from 171.6 MB to 167.1 MB.
+Total: 11.323600 ms (FindLiveObjects: 0.878000 ms CreateObjectMapping: 1.371000 ms MarkObjects: 6.063700 ms  DeleteObjects: 3.008900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.942 seconds
+Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.252 seconds
+Domain Reload Profiling: 2189ms
+	BeginReloadAssembly (244ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (600ms)
+		LoadAssemblies (439ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (275ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (252ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1253ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (858ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (651ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.3 MB). Loaded Objects now: 7400.
+Memory consumption went from 171.6 MB to 167.3 MB.
+Total: 9.981400 ms (FindLiveObjects: 0.798600 ms CreateObjectMapping: 1.362900 ms MarkObjects: 5.197800 ms  DeleteObjects: 2.620500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.931 seconds
+Refreshing native plugins compatible for Editor in 2.47 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.296 seconds
+Domain Reload Profiling: 2220ms
+	BeginReloadAssembly (229ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (601ms)
+		LoadAssemblies (431ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (278ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (250ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1296ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (911ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (686ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6513 unused Assets / (4.1 MB). Loaded Objects now: 7402.
+Memory consumption went from 171.6 MB to 167.5 MB.
+Total: 10.159300 ms (FindLiveObjects: 0.838600 ms CreateObjectMapping: 1.228900 ms MarkObjects: 5.251300 ms  DeleteObjects: 2.839500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
