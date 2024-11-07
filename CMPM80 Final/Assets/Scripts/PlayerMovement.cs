@@ -108,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
 			//Ground Check
 			if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping) //checks if set box overlaps with ground
 			{
+				Debug.Log(true);
 				LastOnGroundTime = Data.coyoteTime; //if so sets the lastGrounded to coyoteTime
             }		
 
