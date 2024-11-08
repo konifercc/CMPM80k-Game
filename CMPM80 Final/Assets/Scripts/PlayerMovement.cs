@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 	public bool IsJumping { get; private set; }
 	public bool IsWallJumping { get; private set; }
 	public bool IsSliding { get; private set; }
+	public bool isGrounded;
 
 	//Timers (also all fields, could be private and a method returning a bool could be used)
 	public float LastOnGroundTime { get; private set; }
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 	//Jump
 	private bool _isJumpCut;
 	private bool _isJumpFalling;
+	private int continuousGroundedFrames;
 
 	//Wall Jump
 	private float _wallJumpStartTime;
@@ -108,8 +110,12 @@ public class PlayerMovement : MonoBehaviour
 			//Ground Check
 			if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping) //checks if set box overlaps with ground
 			{
-				LastOnGroundTime = Data.coyoteTime; //if so sets the lastGrounded to coyoteTime
-            }		
+				if(continuousGroundedFrames > 3)
+					LastOnGroundTime = Data.coyoteTime; //if so sets the lastGrounded to coyoteTime
+				isGrounded = true;
+            }else{
+				isGrounded = false;
+			}
 
 			//Right Wall Check
 			if (((Physics2D.OverlapBox(_frontWallCheckPoint.position, _wallCheckSize, 0, _groundLayer) && IsFacingRight)
@@ -149,7 +155,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		//Jump
-		if (CanJump() && LastPressedJumpTime > 0)
+		if (CanJump() && LastPressedJumpTime > 0 && continuousGroundedFrames > 3)
 		{
 			IsJumping = true;
 			IsWallJumping = false;
@@ -167,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
 			_isJumpFalling = false;
 			_wallJumpStartTime = Time.time;
 			_lastWallJumpDir = (LastOnWallRightTime > 0) ? -1 : 1;
-			
+			//(int)RB.transform.localScale.x * -1
 			WallJump(_lastWallJumpDir);
 		}
 		#endregion
@@ -185,7 +191,7 @@ public class PlayerMovement : MonoBehaviour
 		if (IsSliding)
 		{
 			Debug.Log("is sliding");
-			SetGravityScale(0);
+			SetGravityScale(1);
 		}
 		else if (RB.linearVelocity.y < 0 && _moveInput.y < 0)
 		{
@@ -230,6 +236,14 @@ public class PlayerMovement : MonoBehaviour
 		//Handle Slide
 		if (IsSliding)
 			Slide();
+
+		if (isGrounded){
+			continuousGroundedFrames++;
+		}
+
+		if (IsJumping){
+			continuousGroundedFrames = 0;
+		}
     }
 
     #region INPUT CALLBACKS
@@ -356,6 +370,8 @@ public class PlayerMovement : MonoBehaviour
 
 		if (RB.linearVelocity.y < 0) //checks whether player is falling, if so we subtract the velocity.y (counteracting force of gravity). This ensures the player always reaches our desired jump force or greater
 			force.y -= RB.linearVelocity.y;
+		
+		
 
 		//Unlike in the run we want to use the Impulse mode.
 		//The default mode will apply are force instantly ignoring masss
@@ -367,14 +383,15 @@ public class PlayerMovement : MonoBehaviour
 	#region OTHER MOVEMENT METHODS
 	private void Slide()
 	{
-		//Works the same as the Run but only in the y-axis
-		//THis seems to work fine, buit maybe you'll find a better way to implement a slide into this system
-		float speedDif = Data.slideSpeed - RB.linearVelocity.y;	
-		float movement = speedDif * Data.slideAccel;
-		//So, we clamp the movement here to prevent any over corrections (these aren't noticeable in the Run)
-		//The force applied can't be greater than the (negative) speedDifference * by how many times a second FixedUpdate() is called. For more info research how force are applied to rigidbodies.
-		movement = Mathf.Clamp(movement, -Mathf.Abs(speedDif)  * (1 / Time.fixedDeltaTime), Mathf.Abs(speedDif) * (1 / Time.fixedDeltaTime));
-		RB.AddForce(movement * Vector2.up);
+		// //Works the same as the Run but only in the y-axis
+		// //THis seems to work fine, buit maybe you'll find a better way to implement a slide into this system
+		// float speedDif = Data.slideSpeed - RB.linearVelocity.y;	
+		// float movement = speedDif * Data.slideAccel;
+		// //So, we clamp the movement here to prevent any over corrections (these aren't noticeable in the Run)
+		// //The force applied can't be greater than the (negative) speedDifference * by how many times a second FixedUpdate() is called. For more info research how force are applied to rigidbodies.
+		// movement = Mathf.Clamp(movement, -Mathf.Abs(speedDif)  * (1 / Time.fixedDeltaTime), Mathf.Abs(speedDif) * (1 / Time.fixedDeltaTime));
+		// RB.AddForce(movement * Vector2.up);
+		RB.linearVelocity = new Vector2(RB.linearVelocity.x, -2f);
 	}
     #endregion
 
@@ -429,4 +446,3 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 }
 
-// created by Dawnosaur :D
