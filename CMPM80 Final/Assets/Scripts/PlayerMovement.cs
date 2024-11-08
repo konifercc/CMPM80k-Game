@@ -165,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 			Jump();
 		}
 		//WALL JUMP
-		else if (CanWallJump() && LastPressedJumpTime > 0)
+		else if (CanWallJump() && LastPressedJumpTime > 0 && IsSliding)
 		{
 			IsWallJumping = true;
 			IsJumping = false;
@@ -174,7 +174,8 @@ public class PlayerMovement : MonoBehaviour
 			_wallJumpStartTime = Time.time;
 			_lastWallJumpDir = (LastOnWallRightTime > 0) ? -1 : 1;
 			//(int)RB.transform.localScale.x * -1
-			WallJump(_lastWallJumpDir);
+			//_lastWallJumpDir
+			WallJump((int)RB.transform.localScale.x * (-1));
 		}
 		#endregion
 
@@ -372,7 +373,7 @@ public class PlayerMovement : MonoBehaviour
 			force.y -= RB.linearVelocity.y;
 		
 		
-
+		Debug.Log(force.x + " + ");
 		//Unlike in the run we want to use the Impulse mode.
 		//The default mode will apply are force instantly ignoring masss
 		RB.AddForce(force, ForceMode2D.Impulse);
