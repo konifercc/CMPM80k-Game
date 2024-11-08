@@ -108,7 +108,6 @@ public class PlayerMovement : MonoBehaviour
 			//Ground Check
 			if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping) //checks if set box overlaps with ground
 			{
-				Debug.Log(true);
 				LastOnGroundTime = Data.coyoteTime; //if so sets the lastGrounded to coyoteTime
             }		
 
@@ -156,6 +155,7 @@ public class PlayerMovement : MonoBehaviour
 			IsWallJumping = false;
 			_isJumpCut = false;
 			_isJumpFalling = false;
+			IsSliding = false;
 			Jump();
 		}
 		//WALL JUMP
@@ -177,12 +177,14 @@ public class PlayerMovement : MonoBehaviour
 			IsSliding = true;
 		else
 			IsSliding = false;
+			//Debug.Log("LastOnWallTime" + LastOnWallLeftTime);
 		#endregion
 
 		#region GRAVITY
 		//Higher gravity if we've released the jump input or are falling
 		if (IsSliding)
 		{
+			Debug.Log("is sliding");
 			SetGravityScale(0);
 		}
 		else if (RB.linearVelocity.y < 0 && _moveInput.y < 0)
@@ -333,6 +335,7 @@ public class PlayerMovement : MonoBehaviour
 			force -= RB.linearVelocity.y;
 
 		RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+		Debug.Log("jump");
 		#endregion
 	}
 
@@ -371,7 +374,6 @@ public class PlayerMovement : MonoBehaviour
 		//So, we clamp the movement here to prevent any over corrections (these aren't noticeable in the Run)
 		//The force applied can't be greater than the (negative) speedDifference * by how many times a second FixedUpdate() is called. For more info research how force are applied to rigidbodies.
 		movement = Mathf.Clamp(movement, -Mathf.Abs(speedDif)  * (1 / Time.fixedDeltaTime), Mathf.Abs(speedDif) * (1 / Time.fixedDeltaTime));
-
 		RB.AddForce(movement * Vector2.up);
 	}
     #endregion
