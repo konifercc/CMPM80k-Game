@@ -155,16 +155,16 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3bf6f852a303f994f845a94e24debad3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &421588079
 CircleCollider2D:
@@ -282,8 +282,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 44972c545f3d29b4eb5b0cce433cbeb8, type: 2}
+  isGrounded: 0
   _groundCheckPoint: {fileID: 1288859279}
-  _groundCheckSize: {x: 1, y: 1.5}
+  _groundCheckSize: {x: 0.9, y: 1.5}
   _frontWallCheckPoint: {fileID: 1175291087}
   _backWallCheckPoint: {fileID: 877650005}
   _wallCheckSize: {x: 1.1, y: 1.4}
@@ -397,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &559608906
 Transform:
   m_ObjectHideFlags: 0
@@ -502,7 +503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e3a5b543e58d14cbc4ab2b712b94a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slashCooldown: 0.5
 --- !u!61 &559608911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1159,7 +1159,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.10762775}
+  m_Size: {x: 0.9, y: 0.10762775}
   m_EdgeRadius: 0
 --- !u!1 &1523283840
 GameObject:
