@@ -8,20 +8,35 @@ public class HealthBarScript : MonoBehaviour
 
     public Slider slider;
     public float health;
+    public float sliderMaxHealth;
 
-    public void setSliderHealth(float playerHealth)
+    public void setHealth(float playerHealth)
     {
         slider.value = playerHealth;
     }
 
+    public void setMaxHealth(float playerMaxHealth)
+    {
+        slider.value = playerMaxHealth;
+        slider.maxValue = playerMaxHealth;
+    }
+
     void Start()
     {
-        setSliderHealth(health);
+        //If you choose to modify the bar through this script
+        /*  
+        health = 100.0f;
+        setMaxHealth(health);
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
-        setSliderHealth(health);
+        //If you choose to modify the bar through this script
+        /*
+        health -= 0.05f;
+        setHealth(health);
+        */
     }
 }
