@@ -224,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 53033664}
   health: 0
+  sliderMaxHealth: 0
 --- !u!1 &800875003
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +777,10 @@ PrefabInstance:
       propertyPath: orthographic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1221486269113491799, guid: 55e74ced5348a2040a69c238e1939958, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 53033665}
     - target: {fileID: 2494978006850677839, guid: 55e74ced5348a2040a69c238e1939958, type: 3}
       propertyPath: m_Name
       value: Player
