@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyData : MonoBehaviour
 {
-    [HideInInspector] public float gravityscale;
+    public float gravityscale;
     [Header("Lateral Movement")]
     //public float maxFallSpeedE;
     public float maxSpeedE;
@@ -14,7 +14,7 @@ public class EnemyData : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
