@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
 	{
-		RB = GameObject.FindWithTag("PlayerTag").GetComponent<Rigidbody2D>();
+		RB = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
 	}
 
 	private void Start()
