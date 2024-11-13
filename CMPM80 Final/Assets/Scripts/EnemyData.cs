@@ -12,14 +12,4 @@ public class EnemyData : MonoBehaviour
     public float directionChangeInt = 4f;
 
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
