@@ -4,9 +4,9 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float playerHealth {get; private set;}
-    public float maxHealth = 100.0f;
-    public float minHealth = 0.0f;
+    public float playerHealth { get; private set; }
+    public float maxHealth { get; private set; } = 100.0f;
+    public float minHealth { get; private set; } = 0.0f;
     //checks for receiveDamage call
     [HideInInspector] public bool isAttacked;
     [HideInInspector] public bool recieveFallDamage;
