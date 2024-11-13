@@ -298,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 989891495557279654, guid: 9ebef9dceb32be04d8dbdfaf3d2bf300, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: PlayerTag
       objectReference: {fileID: 0}
     - target: {fileID: 1955836030745775555, guid: 9ebef9dceb32be04d8dbdfaf3d2bf300, type: 3}
       propertyPath: m_LocalPosition.x
@@ -423,7 +423,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!212 &1788192978
 SpriteRenderer:
   m_ObjectHideFlags: 0
