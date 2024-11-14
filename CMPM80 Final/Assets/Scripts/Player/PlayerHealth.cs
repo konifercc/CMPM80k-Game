@@ -13,6 +13,10 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthBarScript healthBar;
 
+    private void Awake()
+    {
+        healthBar = GameObject.FindWithTag("HealthBarTag").GetComponent<HealthBarScript>();
+    }
     void Start()
     {
         playerHealth = maxHealth;
@@ -27,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     //skeleton for taking damage
-    public void recieveDamage(float damage)
+    public void TakeDamage(float damage)
     {
         playerHealth -= damage;
         Debug.Log(playerHealth);

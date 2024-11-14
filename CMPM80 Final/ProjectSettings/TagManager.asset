@@ -8,6 +8,8 @@ TagManager:
   - Sword
   - PlayerTag
   - Spike
+  - EnemyTag
+  - HealthBarTag
   layers:
   - Default
   - TransparentFX
