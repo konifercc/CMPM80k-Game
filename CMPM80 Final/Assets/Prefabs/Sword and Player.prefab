@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7684795605360203857}
   - component: {fileID: 5451680514746241905}
   - component: {fileID: 8879144225224522055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -150,9 +150,9 @@ GameObject:
   - component: {fileID: 5244059824225273198}
   - component: {fileID: 6867928479203732511}
   - component: {fileID: 2063887969624699619}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sword and Player
-  m_TagString: Untagged
+  m_TagString: PlayerTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4923967383884057056}
   - component: {fileID: 5881617855012894123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BackWallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 3388475101974801062}
   - component: {fileID: 9074851622532059936}
   - component: {fileID: 5457420134078809849}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square(Sword)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -513,6 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slashCooldown: 0.5
+  colliderActiveTime: 0.2
 --- !u!61 &9074851622532059936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -676,7 +677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3770338494181419460}
   - component: {fileID: 1016596407980850337}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FrontWallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1216027450420644701}
   - component: {fileID: 4076546628442800581}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3615101074754519348}
   - component: {fileID: 7539965646376743622}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle(Charater)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
