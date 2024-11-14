@@ -31,13 +31,15 @@ public class GameController : MonoBehaviour
 
     IEnumerator Respawn(float respawnCooldown){
         
-        transform.localScale = new Vector3(0,0,1);
-        rb.simulated = false;
         rb.linearVelocity = new Vector2(0,0);
+        
+        rb.simulated = false;
+        transform.localScale = new Vector3(0,0,1);
         yield return new WaitForSeconds(respawnCooldown);
         transform.position = checkPointPos;
         transform.localScale = new Vector3(1,1,1);
         rb.simulated = true;
+        
     }
 
 }
