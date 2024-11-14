@@ -7,11 +7,14 @@ public class GameController : MonoBehaviour
     Vector2 checkPointPos;
     Rigidbody2D rb;
     PlayerHealth playerhealth;
+    PlayerMovement playerMovement;
+    float xScale;
 
     private void Start(){
         checkPointPos = transform.position;
         rb = GetComponent<Rigidbody2D>();
         playerhealth = GetComponent<PlayerHealth>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
@@ -27,6 +30,10 @@ public class GameController : MonoBehaviour
 
     public IEnumerator Respawn(float respawnCooldown){
 
+        if (transform.localScale.x < 0){
+            playerMovement.Turn();
+        }
+        
         playerhealth.isRespawning = true;
         playerhealth.SetMaxHealth();
         rb.linearVelocity = new Vector2(0,0);

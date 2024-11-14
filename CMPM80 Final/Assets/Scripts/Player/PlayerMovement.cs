@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 	//Variables control the various actions the player can perform at any time.
 	//These are fields which can are public allowing for other sctipts to read them
 	//but can only be privately written to.
-	public bool IsFacingRight { get; private set; }
+	public bool IsFacingRight; 
 	public bool IsJumping { get; private set; }
 	public bool IsWallJumping { get; private set; }
 	public bool IsSliding { get; private set; }
@@ -323,7 +323,7 @@ public class PlayerMovement : MonoBehaviour
 		*/
 	}
 
-	private void Turn()
+	public void Turn()
 	{
 		//stores scale and flips the player along the x axis, 
 		Vector3 scale = transform.localScale; 
