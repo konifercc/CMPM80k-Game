@@ -4,32 +4,44 @@ public class EnemyAttack : MonoBehaviour
 {
 
     PlayerHealth playerhealth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float damageTime;
+    public float colliderCooldown;
+
+
+    void Awake()
     {
+        damageTime = 0f; //sets last time damaged to 0, instant first hit
         playerhealth = GameObject.FindWithTag("PlayerTag").GetComponent<PlayerHealth>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (playerhealth == null)
+        {
+            playerhealth = GameObject.FindWithTag("PlayerTag").GetComponent<PlayerHealth>();
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision != null)
+        if (collision.CompareTag("PlayerHitBox"))
         {
-            if (collision.CompareTag("PlayerTag"))
+            colliderCooldown = 1f; //collider cooldown for playerhitbox
+            Debug.Log(playerhealth.playerHealth);
+            Debug.Log("DamageTime" + damageTime + "Time.time" + Time.time);
+            if (Time.time - damageTime >= colliderCooldown)
             {
-                Debug.Log("proper collision");
                 playerhealth.TakeDamage(20);
-                Debug.Log(playerhealth.playerHealth);
+                damageTime = Time.time;
             }
-            else
-            {
-                Debug.Log("Playerobject not found");
-            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerHitBox"))
+        {
+            damageTime = 0f;      
         }
     }
 }

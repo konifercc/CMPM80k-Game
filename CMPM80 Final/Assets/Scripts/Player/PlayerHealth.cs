@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,15 +11,21 @@ public class PlayerHealth : MonoBehaviour
     //checks for receiveDamage call
     [HideInInspector] public bool isAttacked;
     [HideInInspector] public bool recieveFallDamage;
+    [HideInInspector] public bool isRespawning;
 
     public HealthBarScript healthBar;
+    public GameController gamecontroller;
+
 
     private void Awake()
     {
+        gamecontroller = GetComponent<GameController>();
+        if (gamecontroller != null) { Debug.Log("found"); }
         healthBar = GameObject.FindWithTag("HealthBarTag").GetComponent<HealthBarScript>();
     }
     void Start()
     {
+        isRespawning = false;
         playerHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
     }
@@ -28,6 +35,10 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBar.setHealth(playerHealth);
         playerHealth = Mathf.Clamp(playerHealth, minHealth, maxHealth);
+        if (playerHealth <= 0 && !isRespawning)
+        {
+            StartCoroutine(gamecontroller.Respawn(0.5f));
+        }
     }
 
     //skeleton for taking damage
@@ -35,5 +46,11 @@ public class PlayerHealth : MonoBehaviour
     {
         playerHealth -= damage;
         Debug.Log(playerHealth);
+    }
+
+    public void SetMaxHealth()
+    {
+        playerHealth = maxHealth;
+        Debug.Log("set to max health");
     }
 }

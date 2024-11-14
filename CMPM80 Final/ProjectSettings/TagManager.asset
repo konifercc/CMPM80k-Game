@@ -10,6 +10,7 @@ TagManager:
   - Spike
   - EnemyTag
   - HealthBarTag
+  - PlayerHitBox
   layers:
   - Default
   - TransparentFX
