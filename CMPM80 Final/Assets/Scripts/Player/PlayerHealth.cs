@@ -22,19 +22,14 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //checks for ie if player in contact with enemy etc
-        if (Input.GetKeyDown(KeyCode.E) && playerHealth > minHealth)
-            {
-                recieveDamage(10.0f);
-                Debug.Log(playerHealth.ToString());
-            }
         healthBar.setHealth(playerHealth);
+        playerHealth = Mathf.Clamp(playerHealth, minHealth, maxHealth);
     }
 
     //skeleton for taking damage
     public void recieveDamage(float damage)
     {
         playerHealth -= damage;
-        healthBar.setHealth(playerHealth);
+        Debug.Log(playerHealth);
     }
 }
