@@ -150,6 +150,8 @@ GameObject:
   - component: {fileID: 5244059824225273198}
   - component: {fileID: 6867928479203732511}
   - component: {fileID: 2063887969624699619}
+  - component: {fileID: 5551594988934541857}
+  - component: {fileID: 3504366093189935149}
   m_Layer: 7
   m_Name: Sword and Player
   m_TagString: PlayerTag
@@ -309,6 +311,33 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &5551594988934541857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989891495557279654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14311b5238ee2f741ac66232be5de4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3504366093189935149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989891495557279654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fc72a0a512bc2489854edced8dfc2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttacked: 0
+  recieveFallDamage: 0
+  healthBar: {fileID: 0}
 --- !u!1 &2460134768364609024
 GameObject:
   m_ObjectHideFlags: 0
