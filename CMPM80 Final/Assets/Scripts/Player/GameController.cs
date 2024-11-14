@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameController : MonoBehaviour
 {
     Vector2 checkPointPos;
@@ -30,14 +31,14 @@ public class GameController : MonoBehaviour
 
     public IEnumerator Respawn(float respawnCooldown){
 
-        if (transform.localScale.x < 0){
-            playerMovement.Turn();
-        }
+        
         
         playerhealth.isRespawning = true;
         playerhealth.SetMaxHealth();
         rb.linearVelocity = new Vector2(0,0);
-        
+        if (transform.localScale.x < 0){
+            playerMovement.Turn();
+        }
         rb.simulated = false;
         transform.localScale = new Vector3(0,0,1);
         yield return new WaitForSeconds(respawnCooldown);

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -37,7 +38,8 @@ public class PlayerHealth : MonoBehaviour
         playerHealth = Mathf.Clamp(playerHealth, minHealth, maxHealth);
         if (playerHealth <= 0 && !isRespawning)
         {
-            StartCoroutine(gamecontroller.Respawn(0.5f));
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
         }
     }
 

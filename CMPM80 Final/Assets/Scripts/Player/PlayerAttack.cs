@@ -32,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
         }
 
         // Trigger attack when pressing "Z" and cooldown allows
-        if (Input.GetKeyDown(KeyCode.K) && timeBtwAttack <= 0)
+        if (Input.GetKeyDown(KeyCode.Z) && timeBtwAttack <= 0)
         {
             PerformSlash();
             timeBtwAttack = startTimeBtwAttack; // Reset cooldown timer
