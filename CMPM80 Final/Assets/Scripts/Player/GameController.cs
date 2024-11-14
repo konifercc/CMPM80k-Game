@@ -22,28 +22,6 @@ public class GameController : MonoBehaviour
         if (collision.CompareTag("Spike")){
             StartCoroutine(Respawn(0.5f));
         }
-
-        //player lose health to enemy
-        if (collision.CompareTag("EnemyTag")){
-            Debug.Log("contact");
-            if (collision != null)
-            {
-                if (playerhealth != null)
-                {
-                    // Do something with playerHealth
-                    playerhealth.recieveDamage(20);
-
-                }
-                else
-                {
-                    Debug.LogError("PlayerHealth component is missing on the collided object.");
-                }
-            }
-            else
-            {
-                Debug.LogError("Collider is null.");
-            }
-        }
     }
 
 
