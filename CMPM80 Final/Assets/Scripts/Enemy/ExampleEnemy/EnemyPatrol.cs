@@ -9,7 +9,10 @@ public class EnemyPatrol : MonoBehaviour
     public Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
+    public EnemyFollow enemyFollow;
+    public KnockBack knockBack;
     public float speed;
+    public bool isKnockedBack;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,27 +20,37 @@ public class EnemyPatrol : MonoBehaviour
         anim = GetComponent<Animator>();
         currentPoint = pointB.transform;   
         anim.SetBool("isRunning", true);
+        enemyFollow = GetComponent<EnemyFollow>();
+        knockBack = GetComponent<KnockBack>();
     }
 
     // Update is called once per frame
     void Update()
     {
-    
-        Vector2 point = currentPoint.position - transform.position;
-        if (currentPoint == pointB.transform){
-            rb.linearVelocity = new Vector2(speed, 0);
-        }
-        else{
-            rb.linearVelocity = new Vector2(-speed,0);
-        }
 
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform){
-            Flip();
-            currentPoint = pointA.transform;
-        }
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform){
-            Flip();
-            currentPoint = pointB.transform;
+        if (!enemyFollow.followMode && !isKnockedBack)
+        {
+
+            Vector2 point = currentPoint.position - transform.position;
+            if (currentPoint == pointB.transform && !isKnockedBack)
+            {
+                rb.linearVelocity = new Vector2(speed, 0);
+            }
+            else if (!isKnockedBack)
+            {
+                rb.linearVelocity = new Vector2(-speed, 0);
+            }
+
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+            {
+                Flip();
+                currentPoint = pointA.transform;
+            }
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
+            {
+                Flip();
+                currentPoint = pointB.transform;
+            }
         }
 
 
@@ -49,7 +62,7 @@ public class EnemyPatrol : MonoBehaviour
         transform.localScale = localScale;
     }
 
-    private void onDrawGizmosSelected(){
+    private void OnDrawGizmosSelected(){
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);

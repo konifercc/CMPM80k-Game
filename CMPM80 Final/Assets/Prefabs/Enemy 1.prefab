@@ -79,9 +79,13 @@ GameObject:
   - component: {fileID: 8692803722600685277}
   - component: {fileID: 4213663577956262770}
   - component: {fileID: 2270141999941056324}
-  m_Layer: 0
+  - component: {fileID: 3856870576309740522}
+  - component: {fileID: 960994536114640875}
+  - component: {fileID: 7165100273128797512}
+  - component: {fileID: 5986575174166186209}
+  m_Layer: 8
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: EnemyTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +170,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b602c050149121340b508a08cb8ad30e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -190,7 +194,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.014239788, y: 0.10917199}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -200,7 +204,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2183447, y: 1.218344}
   m_EdgeRadius: 0
 --- !u!50 &8692803722600685277
 Rigidbody2D:
@@ -266,7 +270,67 @@ MonoBehaviour:
   pointA: {fileID: 9054463493737797734}
   pointB: {fileID: 63775915442393929}
   rb: {fileID: 8692803722600685277}
+  enemyFollow: {fileID: 0}
+  knockBack: {fileID: 0}
   speed: 5
+  isKnockedBack: 0
+--- !u!114 &3856870576309740522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455215185677311876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2affdeba4fd56764190868f9924d9861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTime: 0
+  colliderCooldown: 0
+--- !u!114 &960994536114640875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455215185677311876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9a03197eaf980449dedae961adedc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMinHealth: 0
+  enemyMaxHealth: 100
+  enemyHealth: 100
+--- !u!114 &7165100273128797512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455215185677311876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1ffe15921c8f24aa3facef3d985c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackDuration: 0.3
+--- !u!114 &5986575174166186209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455215185677311876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdbf337c8391ed47a5da47bbc423855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 70
+  distanceToPlayer: 0
 --- !u!1 &9054463493737797734
 GameObject:
   m_ObjectHideFlags: 0

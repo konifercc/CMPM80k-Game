@@ -27,8 +27,6 @@ public class EnemyAttack : MonoBehaviour
         if (collision.CompareTag("PlayerHitBox"))
         {
             colliderCooldown = 1f; //collider cooldown for playerhitbox
-            Debug.Log(playerhealth.playerHealth);
-            Debug.Log("DamageTime" + damageTime + "Time.time" + Time.time);
             if (Time.time - damageTime >= colliderCooldown)
             {
                 playerhealth.TakeDamage(20);

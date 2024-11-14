@@ -6,10 +6,12 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPos;                      // Position in front of the player for the attack
     public LayerMask whatIsEnemy;                    // Layer mask to define what is considered an enemy
     public Vector2 attackBoxSize = new Vector2(2.0f, 1.0f); // Size of the rectangular attack area
-    public float knockbackForce = 10f;               // Knockback force applied to the enemy
+    public EnemyHealth enemy;                        // the enemy to apply damage to
+    public float knockbackForce = 15f;               // Knockback force applied to the enemy
 
     private Animator animator;
     private float timeBtwAttack;
+
 
     void Start()
     {
@@ -19,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
         {
             Debug.LogError("Animator component not found on Player object.");
         }
+        enemy = GameObject.FindWithTag("EnemyTag").GetComponent<EnemyHealth>();
     }
 
     void Update()
@@ -29,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
         }
 
         // Trigger attack when pressing "Z" and cooldown allows
-        if (Input.GetKeyDown(KeyCode.Z) && timeBtwAttack <= 0)
+        if (Input.GetKeyDown(KeyCode.K) && timeBtwAttack <= 0)
         {
             PerformSlash();
             timeBtwAttack = startTimeBtwAttack; // Reset cooldown timer
@@ -50,6 +53,7 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (var enemyCollider in enemiesToKnockBack)
         {
+            Debug.Log("Entered Loop");
             // Apply knockback if the enemy has a KnockBack component
             KnockBack knockbackComponent = enemyCollider.GetComponent<KnockBack>();
             if (knockbackComponent != null)
@@ -58,6 +62,11 @@ public class PlayerAttack : MonoBehaviour
                 Vector2 knockbackDirection = (enemyCollider.transform.position - transform.position).normalized;
                 // Apply knockback with direction and force
                 knockbackComponent.ApplyKnockback(knockbackDirection, knockbackForce);
+            }
+            EnemyHealth enemy = enemyCollider.GetComponent<EnemyHealth>(); // Get the EnemyHealth component
+            if (enemy != null)
+            {
+                enemy.TakeDamageE(20); // Apply damage to the enemy (example damage value)
             }
         }
     }

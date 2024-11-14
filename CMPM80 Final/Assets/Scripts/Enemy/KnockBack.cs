@@ -3,10 +3,11 @@ using UnityEngine;
 public class KnockBack : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float knockbackDuration = 0.2f;
+    public float knockbackDuration = 0.3f;
 
     private void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
         {
