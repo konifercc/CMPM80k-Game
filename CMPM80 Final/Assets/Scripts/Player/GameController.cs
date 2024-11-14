@@ -23,8 +23,9 @@ public class GameController : MonoBehaviour
     }
 
     IEnumerator Respawn(float respawnCooldown){
-        rb.simulated = false;
+        
         transform.localScale = new Vector3(0,0,1);
+        rb.simulated = false;
         rb.linearVelocity = new Vector2(0,0);
         yield return new WaitForSeconds(respawnCooldown);
         transform.position = checkPointPos;
