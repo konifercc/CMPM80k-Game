@@ -29,10 +29,11 @@ public class EnemyFollow : MonoBehaviour
     private void MoveTowardsPlayer()
     {
         Vector2 direction = (player.position - transform.position).normalized;
-        rb.linearVelocity = direction * speed;
+        Vector2 newPosition = Vector2.MoveTowards(rb.position, player.position, speed * Time.deltaTime);
+        rb.MovePosition(newPosition);
     }
 
-    // Method to disable movement for a specified time
+    // Method to disable movement for a specified time (used for knockback)
     public void DisableMovement(float duration)
     {
         canMove = false;

@@ -1,71 +1,75 @@
 using UnityEngine;
 
-public class SwordController : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
+    public float startTimeBtwAttack = 0.3f;          // Cooldown time between attacks
+    public Transform attackPos;                      // Position in front of the player for the attack
+    public LayerMask whatIsEnemy;                    // Layer mask to define what is considered an enemy
+    public Vector2 attackBoxSize = new Vector2(2.0f, 1.0f); // Size of the rectangular attack area
+    public float knockbackForce = 10f;               // Knockback force applied to the enemy
+
     private Animator animator;
-    private Collider2D swordCollider;
-    public float slashCooldown = 0.5f; // Cooldown time in seconds
-    private float cooldownTimer = 0.0f;
-    public float colliderActiveTime = 0.2f; // Time the collider stays active during the slash
+    private float timeBtwAttack;
 
     void Start()
     {
-        // Get the Animator component attached to this GameObject
+        // Get the Animator component
         animator = GetComponent<Animator>();
-
-        // Check if Animator is correctly assigned
         if (animator == null)
         {
-            Debug.LogError("Animator component not found on this GameObject. Please ensure it's attached.");
-        }
-
-        // Get the Collider2D component attached to this GameObject
-        swordCollider = GetComponent<Collider2D>();
-
-        // Check if Collider is correctly assigned
-        if (swordCollider == null)
-        {
-            Debug.LogError("Collider2D component not found on this GameObject. Please ensure it's attached.");
-        }
-        else
-        {
-            swordCollider.enabled = false; // Initially disable the collider
+            Debug.LogError("Animator component not found on Player object.");
         }
     }
 
     void Update()
     {
-        // Decrease the cooldown timer over time
-        if (cooldownTimer > 0)
+        if (timeBtwAttack > 0)
         {
-            cooldownTimer -= Time.deltaTime;
+            timeBtwAttack -= Time.deltaTime;
         }
 
-        // Check if "Z" is pressed and if the cooldown is complete
-        if (Input.GetKeyDown(KeyCode.Z))
+        // Trigger attack when pressing "Z" and cooldown allows
+        if (Input.GetKeyDown(KeyCode.Z) && timeBtwAttack <= 0)
         {
-            Debug.Log("Z key pressed"); // Debug log to confirm key press
+            PerformSlash();
+            timeBtwAttack = startTimeBtwAttack; // Reset cooldown timer
+        }
+    }
 
-            if (cooldownTimer <= 0)
-            {
-                animator.SetTrigger("BladeUpwardSlash"); // Trigger the slash animation
-                Debug.Log("BladeUpwardSlash animation triggered"); // Debug log to confirm trigger
-                cooldownTimer = slashCooldown; // Reset the cooldown timer
+    void PerformSlash()
+    {
+        // Play the attack animation
+        if (animator != null)
+        {
+            animator.SetTrigger("BladeUpwardSlash"); // Trigger the attack animation
+            Debug.Log("Attack animation triggered.");
+        }
 
-                // Enable the sword collider and disable it after a short delay
-                swordCollider.enabled = true;
-                Invoke("DisableCollider", colliderActiveTime); // Disable collider after colliderActiveTime
-            }
-            else
+        // Detect enemies within the rectangular attack area
+        Collider2D[] enemiesToKnockBack = Physics2D.OverlapBoxAll(attackPos.position, attackBoxSize, 0, whatIsEnemy);
+
+        foreach (var enemyCollider in enemiesToKnockBack)
+        {
+            // Apply knockback if the enemy has a KnockBack component
+            KnockBack knockbackComponent = enemyCollider.GetComponent<KnockBack>();
+            if (knockbackComponent != null)
             {
-                Debug.Log("Slash on cooldown"); // If cooldown is active
+                // Calculate knockback direction (from player to enemy)
+                Vector2 knockbackDirection = (enemyCollider.transform.position - transform.position).normalized;
+                // Apply knockback with direction and force
+                knockbackComponent.ApplyKnockback(knockbackDirection, knockbackForce);
             }
         }
     }
 
-    // Method to disable the sword collider
-    private void DisableCollider()
+    void OnDrawGizmosSelected()
     {
-        swordCollider.enabled = false;
+        // Draw a red rectangle to visualize the attack area in the Scene view
+        if (attackPos != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.matrix = Matrix4x4.TRS(attackPos.position, Quaternion.identity, Vector3.one);
+            Gizmos.DrawWireCube(Vector3.zero, attackBoxSize);
+        }
     }
 }
