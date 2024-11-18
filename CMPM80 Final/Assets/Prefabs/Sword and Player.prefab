@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 2063887969624699619}
   - component: {fileID: 5551594988934541857}
   - component: {fileID: 3504366093189935149}
+  - component: {fileID: 1741617229717722180}
   m_Layer: 7
   m_Name: Sword and Player
   m_TagString: PlayerTag
@@ -172,6 +173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 9100128327519500678}
   - {fileID: 5461880512813851987}
   - {fileID: 4434499598362000442}
   - {fileID: 3615101074754519348}
@@ -303,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 44972c545f3d29b4eb5b0cce433cbeb8, type: 2}
+  IsFacingRight: 0
   isGrounded: 0
   _groundCheckPoint: {fileID: 1216027450420644701}
   _groundCheckSize: {x: 0.9, y: 1.5}
@@ -341,6 +344,22 @@ MonoBehaviour:
   isRespawning: 0
   healthBar: {fileID: 0}
   gamecontroller: {fileID: 0}
+--- !u!114 &1741617229717722180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989891495557279654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db945a2d5f13564eb65faffcba6e839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireballPrefab: {fileID: 6756550851243371661, guid: 4f71c3bca9254af429a6e4773055f18c, type: 3}
+  fireballSpawnPoint: {fileID: 9100128327519500678}
+  fireballSpeed: 10
+  fireballCooldown: 0.5
 --- !u!1 &2460134768364609024
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +647,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.2624727, y: 1.4511015}
   m_EdgeRadius: 0
+--- !u!1 &8918849884415582271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9100128327519500678}
+  m_Layer: 0
+  m_Name: Postion of FireSpell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9100128327519500678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918849884415582271}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.622, y: -0.294, z: -0.03433023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1955836030745775555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8921039788108279008
 GameObject:
   m_ObjectHideFlags: 0
