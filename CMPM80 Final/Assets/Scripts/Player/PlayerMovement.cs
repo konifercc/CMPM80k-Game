@@ -91,7 +91,8 @@ public class PlayerMovement : MonoBehaviour
 		_moveInput.y = Input.GetAxisRaw("Vertical");
 
 		if (_moveInput.x != 0)
-			CheckDirectionToFace(_moveInput.x > 0);
+			Turn();	
+			//CheckDirectionToFace(_moveInput.x > 0);
 
 		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
@@ -326,11 +327,17 @@ public class PlayerMovement : MonoBehaviour
 	public void Turn()
 	{
 		//stores scale and flips the player along the x axis, 
-		Vector3 scale = transform.localScale; 
-		scale.x *= -1;
-		transform.localScale = scale;
+		// Vector3 scale = transform.localScale; 
+		// scale.x *= -1;
+		// transform.localScale = scale;
 
-		IsFacingRight = !IsFacingRight;
+		// IsFacingRight = !IsFacingRight;
+		if(_moveInput.x > 0){
+			transform.localScale = new Vector3(1, 1, 1);
+		}
+		else if(_moveInput.x < 0){
+			transform.localScale = new Vector3(-1, 1, 1);
+		}
 	}
     #endregion
 
@@ -398,11 +405,11 @@ public class PlayerMovement : MonoBehaviour
 
 
     #region CHECK METHODS
-    public void CheckDirectionToFace(bool isMovingRight)
-	{
-		if (isMovingRight != IsFacingRight)
-			Turn();
-	}
+    // public void CheckDirectionToFace(bool isMovingRight)
+	// {
+	// 	if (isMovingRight != IsFacingRight)
+	// 		Turn();
+	// }
 
     private bool CanJump()
     {

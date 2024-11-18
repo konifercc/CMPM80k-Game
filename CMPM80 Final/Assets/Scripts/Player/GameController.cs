@@ -37,7 +37,9 @@ public class GameController : MonoBehaviour
         playerhealth.SetMaxHealth();
         rb.linearVelocity = new Vector2(0,0);
         if (transform.localScale.x < 0){
+            playerMovement.IsFacingRight = false;
             playerMovement.Turn();
+            Debug.Log(" wrong way " + playerMovement.IsFacingRight);
         }
         rb.simulated = false;
         transform.localScale = new Vector3(0,0,1);
