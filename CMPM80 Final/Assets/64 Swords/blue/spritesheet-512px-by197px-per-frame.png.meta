@@ -622,7 +622,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet-512px-by197px-per-frame_0: 2674963236897015346
+      spritesheet-512px-by197px-per-frame_1: 5774927665694257274
+      spritesheet-512px-by197px-per-frame_10: 7951173276754002483
+      spritesheet-512px-by197px-per-frame_11: -3231242766804999013
+      spritesheet-512px-by197px-per-frame_12: -6215844554525377833
+      spritesheet-512px-by197px-per-frame_13: -979332627974016341
+      spritesheet-512px-by197px-per-frame_14: 1107921511909381546
+      spritesheet-512px-by197px-per-frame_15: -1777892236909711432
+      spritesheet-512px-by197px-per-frame_16: 6591047901344784796
+      spritesheet-512px-by197px-per-frame_17: 1014371982334372771
+      spritesheet-512px-by197px-per-frame_18: -4118575144216038440
+      spritesheet-512px-by197px-per-frame_19: 1142604160538636089
+      spritesheet-512px-by197px-per-frame_2: -3168768743062388669
+      spritesheet-512px-by197px-per-frame_3: -8518970965889065433
+      spritesheet-512px-by197px-per-frame_4: 3520878607599290279
+      spritesheet-512px-by197px-per-frame_5: -7575868356174348271
+      spritesheet-512px-by197px-per-frame_6: -3441566204023454670
+      spritesheet-512px-by197px-per-frame_7: -239772838187323235
+      spritesheet-512px-by197px-per-frame_8: 6828347823863108383
+      spritesheet-512px-by197px-per-frame_9: -810406739750473378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

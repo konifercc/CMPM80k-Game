@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Demon_Prince_Jump_4_0: -7508072274645466530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
