@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b12bffde1b4a8dc4b94030049d11de0c
+guid: b1ded603373b61144907322f68589fd6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 297761703447499198
-    second: enemy_0
+      213: 3737897332693287829
+    second: Bar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_0
+      name: Bar_0
       rect:
         serializedVersion: 2
-        x: 249
+        x: 0
         y: 0
-        width: 3440
-        height: 3939
+        width: 52
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb114b111bcd12400800000000000000
-      internalID: 297761703447499198
+      spriteID: 5934012e1ddafd330800000000000000
+      internalID: 3737897332693287829
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy_0: 297761703447499198
+      Bar_0: 3737897332693287829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
