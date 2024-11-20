@@ -5,15 +5,21 @@ public class EnemyFollow : MonoBehaviour
     public Transform player;
     public EnemyPatrol enemyPatrol;
     private Rigidbody2D rb;
+    private GameObject[] spikes;
 
-    public float speed = 100f;
+    public float speed = 10f;
     public float distanceToPlayer;
+    public float followDistance = 5f;
+    private float distanceToSpike;
     private bool canMove = true; // Flag to control movement
+    public bool isJumping;
     public bool followMode { get; private set;} = false; 
     
 
     private void Start()
     {
+        isJumping = false;
+        spikes = GameObject.FindGameObjectsWithTag("SpikeHitBox");
         rb = GetComponent<Rigidbody2D>();
         enemyPatrol = GetComponent<EnemyPatrol>();
 
@@ -23,14 +29,14 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         distanceToPlayer = Vector2.Distance(player.position, transform.position);
-        if (canMove && distanceToPlayer < 3.5f)
+        if (canMove && distanceToPlayer < followDistance)
         {
             MoveTowardsPlayer();
         }
-        if (followMode && distanceToPlayer >= 3.5f)
+        if (followMode && distanceToPlayer >= followDistance)
         {
             followMode = false;
 
@@ -55,19 +61,29 @@ public class EnemyFollow : MonoBehaviour
 
     private void MoveTowardsPlayer()
     {
-        Vector2 direction = (player.position - transform.position).normalized;
-        Vector2 newPosition = Vector2.MoveTowards(rb.position, player.position, speed * Time.deltaTime);
-        //invoke flip from enemypatrol when enemy not facing player
-        
-        if (direction.x < 0 && enemyPatrol.isFacingRight)
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        float direction = Mathf.Sign(player.position.x - transform.position.x);
+        //Vector2 targetPosition = new Vector2(player.position.x, rb.position.y); //lock Y movement when folowing
+        rb.linearVelocityX = direction * speed;
+
+        // Check if enemy is walking towards a spike        
+        float nearestSpike = GetDistanceToNearestSpike();
+        if (nearestSpike < 1f && !isJumping)
+        {
+            Debug.Log("Jumping over spike");
+            JumpSpike();
+            isJumping = false;
+        }
+
+        // Invoke flip from EnemyPatrol when enemy not facing player
+        if (direction < 0 && enemyPatrol.isFacingRight)
         {
             enemyPatrol.Flip();
         }
-        else if (direction.x > 0 && !enemyPatrol.isFacingRight)
+        else if (direction > 0 && !enemyPatrol.isFacingRight)
         {
             enemyPatrol.Flip();
         }
-        rb.MovePosition(newPosition);
         followMode = true;
     }
 
@@ -79,9 +95,39 @@ public class EnemyFollow : MonoBehaviour
         Invoke("EnableMovement", duration);
     }
 
-    private void EnableMovement()
+    // Method to enable movement after a specified time
+    public void EnableMovement()
     {
         canMove = true;
         enemyPatrol.isKnockedBack = false;
     }
+    
+
+    public void JumpSpike()
+    {
+        isJumping = true;
+        rb.AddForce(Vector2.up * 1f, ForceMode2D.Impulse);
+    }
+
+    float GetDistanceToNearestSpike()
+    {
+        float nearestDistance = Mathf.Infinity;
+        GameObject nearestSpike = null;
+
+        // Loop through each spike and calculate the distance
+        foreach (GameObject spike in spikes)
+        {
+            float distance = Vector2.Distance(transform.position, spike.transform.position);
+
+            // Check if this spike is the closest one
+            if (distance < nearestDistance)
+            {
+                nearestDistance = distance;
+                nearestSpike = spike;
+            }
+        }
+        return nearestDistance;
+    }
+
+
 }

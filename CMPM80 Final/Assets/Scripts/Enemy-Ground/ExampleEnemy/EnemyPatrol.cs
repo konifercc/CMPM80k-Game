@@ -35,11 +35,11 @@ public class EnemyPatrol : MonoBehaviour
             Vector2 point = currentPoint.position - transform.position;
             if (currentPoint == pointB.transform && !isKnockedBack)
             {
-                rb.linearVelocity = new Vector2(speed, 0);
+                rb.linearVelocityX = speed;
             }
             else if (!isKnockedBack)
             {
-                rb.linearVelocity = new Vector2(-speed, 0);
+                rb.linearVelocityX = -speed;
             }
            
 

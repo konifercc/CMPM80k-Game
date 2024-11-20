@@ -3,6 +3,7 @@ using UnityEngine;
 public class KnockBack : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private EnemyFollow enemyFollow;
     public float knockbackDuration = 0.3f;
 
     private void Start()
@@ -37,6 +38,6 @@ public class KnockBack : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero; // Stop movement after knockback duration
-        }
+        } 
     }
 }

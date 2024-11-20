@@ -12,6 +12,7 @@ TagManager:
   - HealthBarTag
   - PlayerHitBox
   - Spells
+  - SpikeHitBox
   layers:
   - Default
   - TransparentFX
