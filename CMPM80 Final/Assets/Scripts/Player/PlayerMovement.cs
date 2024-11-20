@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
 	//Components
     public Rigidbody2D RB { get; private set; }
 
+	private Animator anim;
+
 	//Variables control the various actions the player can perform at any time.
 	//These are fields which can are public allowing for other sctipts to read them
 	//but can only be privately written to.
@@ -31,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 	public bool IsWallJumping { get; private set; }
 	public bool IsSliding { get; private set; }
 	public bool isGrounded;
-
+	
 	//Timers (also all fields, could be private and a method returning a bool could be used)
 	public float LastOnGroundTime { get; private set; }
 	public float LastOnWallTime { get; private set; }
@@ -47,26 +49,27 @@ public class PlayerMovement : MonoBehaviour
 	private float _wallJumpStartTime;
 	private int _lastWallJumpDir;
 
-	private Vector2 _moveInput;
+	public Vector2 _moveInput; 
 	public float LastPressedJumpTime { get; private set; }
 
 	//Set all of these up in the inspector
 	[Header("Checks")] 
-	[SerializeField] private Transform _groundCheckPoint;
+	[SerializeField] public Transform _groundCheckPoint;
 	//Size of groundCheck depends on the size of your character generally you want them slightly small than width (for ground) and height (for the wall check)
-	[SerializeField] private Vector2 _groundCheckSize = new Vector2(0.49f, 0.03f);
+	[SerializeField] public Vector2 _groundCheckSize = new Vector2(0.49f, 0.03f);
 	[Space(5)]
 	[SerializeField] private Transform _frontWallCheckPoint;
 	[SerializeField] private Transform _backWallCheckPoint;
 	[SerializeField] private Vector2 _wallCheckSize = new Vector2(0.5f, 1f);
 
     [Header("Layers & Tags")]
-	[SerializeField] private LayerMask _groundLayer;
+	[SerializeField] public LayerMask _groundLayer;
 	#endregion
 
     private void Awake()
 	{
 		RB = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
 	}
 
 	private void Start()
@@ -89,6 +92,8 @@ public class PlayerMovement : MonoBehaviour
 		#region INPUT HANDLER
 		_moveInput.x = Input.GetAxisRaw("Horizontal");
 		_moveInput.y = Input.GetAxisRaw("Vertical");
+
+		//anim.SetBool("isRunning", _moveInput.x != 0);
 
 		if (_moveInput.x != 0)
 			Turn();	
