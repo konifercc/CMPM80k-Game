@@ -7,7 +7,7 @@ public class HealthBarScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public Slider slider;
-    public float health;
+    //public float health; for testing
     public float sliderMaxHealth;
 
     public void setHealth(float playerHealth)
@@ -24,12 +24,13 @@ public class HealthBarScript : MonoBehaviour
     void Start()
     {
         //If you choose to modify the bar through this script
-        /*  
+        /*
         health = 100.0f;
         setMaxHealth(health);
         */
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -37,6 +38,7 @@ public class HealthBarScript : MonoBehaviour
         /*
         health -= 0.05f;
         setHealth(health);
+        Debug.LogError(health);
         */
     }
 }

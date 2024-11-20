@@ -4,8 +4,8 @@ public class EnemyAttack : MonoBehaviour
 {
 
     PlayerHealth playerhealth;
-    public float damageTime;
-    public float colliderCooldown;
+    public float damageTime; //last time player took damage
+    public float colliderCooldown; //cooldown for continous collision damage
 
 
     void Awake()
@@ -26,7 +26,8 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.CompareTag("PlayerHitBox"))
         {
-            colliderCooldown = 1f; //collider cooldown for playerhitbox
+            Debug.Log("collision detected");
+            colliderCooldown = 1f; 
             if (Time.time - damageTime >= colliderCooldown)
             {
                 playerhealth.TakeDamage(20);

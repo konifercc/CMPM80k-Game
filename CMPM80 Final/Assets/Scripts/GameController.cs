@@ -29,10 +29,8 @@ public class GameController : MonoBehaviour
         checkPointPos = pos;
     }
 
-    public IEnumerator Respawn(float respawnCooldown){
-
-        
-        
+    public IEnumerator Respawn(float respawnCooldown)
+    {    
         playerhealth.isRespawning = true;
         playerhealth.SetMaxHealth();
         rb.linearVelocity = new Vector2(0,0);

@@ -82,6 +82,7 @@ GameObject:
   - component: {fileID: 3856870576309740522}
   - component: {fileID: 960994536114640875}
   - component: {fileID: 7165100273128797512}
+  - component: {fileID: 5755425980577887664}
   m_Layer: 8
   m_Name: Square
   m_TagString: EnemyTag
@@ -315,6 +316,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackDuration: 0.3
+--- !u!114 &5755425980577887664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455215185677311876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d736da2afcb1464fbfda8cd6a917365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 100
+  distanceToPlayer: 0
 --- !u!1 &9054463493737797734
 GameObject:
   m_ObjectHideFlags: 0
