@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3984236523934793564}
   - component: {fileID: 5575075229676921447}
   - component: {fileID: 3112842487375833130}
-  - component: {fileID: 5265813149334851120}
+  - component: {fileID: 5316139837690661746}
   m_Layer: 10
   m_Name: Fireball
   m_TagString: Spells
@@ -148,7 +148,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -176,9 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6738e24d4e0d5b4a93a5575b951b0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 20
   lifetime: 3
---- !u!95 &5265813149334851120
+--- !u!95 &5316139837690661746
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ Animator:
   m_GameObject: {fileID: 6756550851243371661}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 220f9aae5b8960e4593bd145a85b81b0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 31a0be556cf053340b1f8d9d1e955daf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

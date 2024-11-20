@@ -391,7 +391,7 @@ Transform:
   m_GameObject: {fileID: 3918857538499150723}
   serializedVersion: 2
   m_LocalRotation: {x: -0.05751267, y: -0.11074799, z: 0.9921825, w: -0.0010388818}
-  m_LocalPosition: {x: 0.997, y: -0.145, z: -1}
+  m_LocalPosition: {x: 1.19, y: -0.25, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -422,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 3920784761992548188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.622, y: -0.294, z: -0.03433023}
+  m_LocalPosition: {x: 0.97, y: -0.29, z: -0.03433023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireballPrefab: {fileID: 6756550851243371661, guid: 4f71c3bca9254af429a6e4773055f18c, type: 3}
   fireballSpawnPoint: {fileID: 3739487695874791141}
-  fireballSpeed: 25
+  fireballSpeed: 10
   fireballCooldown: 0.5
 --- !u!1 &5343332162076462001
 GameObject:
