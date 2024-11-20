@@ -9,12 +9,6 @@ public class ControllingFire : MonoBehaviour
     [SerializeField] private float fireballCooldown = 0.5f; // Cooldown between fireballs
 
     private float _lastFireballTime; // Tracks the last time a fireball was shot
-    private PlayerMovement _playerMovement; // Reference to the PlayerMovement script
-
-    private void Start()
-    {
-        _playerMovement = GetComponent<PlayerMovement>(); // Get the PlayerMovement script
-    }
 
     private void Update()
     {
@@ -40,14 +34,14 @@ public class ControllingFire : MonoBehaviour
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            // Determine direction based on player's facing direction
-            Vector2 fireballDirection = _playerMovement.IsFacingRight ? Vector2.right : Vector2.left;
+            // Determine direction based on player's localScale.x
+            Vector2 fireballDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
             rb.linearVelocity = fireballDirection * fireballSpeed;
 
             // Optional: Flip fireball sprite if moving left
-            if (!_playerMovement.IsFacingRight)
+            if (transform.localScale.x < 0)
             {
-                fireball.transform.rotation = Quaternion.Euler(0, 180, 0);
+                fireball.transform.localScale = new Vector3(-fireball.transform.localScale.x, fireball.transform.localScale.y, fireball.transform.localScale.z);
             }
         }
     }
