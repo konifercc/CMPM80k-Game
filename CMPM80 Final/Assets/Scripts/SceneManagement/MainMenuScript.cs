@@ -35,6 +35,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void MainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadSceneAsync("MainMenu");
     }
 
