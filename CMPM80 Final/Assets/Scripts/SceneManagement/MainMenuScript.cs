@@ -19,7 +19,7 @@ public class MainMenuScript : MonoBehaviour
     }   
 
     public void PlayGame()
-    {
+    {   
         SceneManager.LoadSceneAsync("CheckpointTest");
     }
 
@@ -30,7 +30,12 @@ public class MainMenuScript : MonoBehaviour
 
     public void LoadCredits()
     {
-        SceneManager.LoadSceneAsync("Credits");
+        SceneManager.LoadSceneAsync("CreditsMenu");
+    }
+
+    public void LoadControls()
+    {
+        SceneManager.LoadSceneAsync("ControlsMenu");
     }
 
     public void MainMenu()
