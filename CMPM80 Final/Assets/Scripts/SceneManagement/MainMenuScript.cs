@@ -35,7 +35,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void LoadControls()
     {
-        SceneManager.LoadSceneAsync("ControlsMenu");
+        SceneManager.LoadSceneAsync("TutorialMenu");
     }
 
     public void MainMenu()
