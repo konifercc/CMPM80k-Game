@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   lifetime: 3
+  particle: {fileID: 7230888878944492398, guid: ef92a7f9b9fc6934caead14d978cd392, type: 3}
 --- !u!95 &5316139837690661746
 Animator:
   serializedVersion: 7

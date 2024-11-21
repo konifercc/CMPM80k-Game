@@ -4,6 +4,7 @@ public class Fireball : MonoBehaviour
 {
     [SerializeField] private float damage = 10f; // Default damage value
     [SerializeField] private float lifetime = 3f; // Lifetime of the fireball in seconds
+    public GameObject particle;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class Fireball : MonoBehaviour
         EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
         if (enemy != null)
         {
+            Instantiate(particle, transform.position, Quaternion.identity);
             enemy.TakeDamageE(damage); // Deal damage to the enemy
         }
 
@@ -40,8 +42,10 @@ public class Fireball : MonoBehaviour
     {
         // Check if the object hit is an enemy
         EnemyHealth enemy = collider.gameObject.GetComponent<EnemyHealth>();
+        
         if (enemy != null)
         {
+            Instantiate(particle, transform.position, Quaternion.identity);
             enemy.TakeDamageE(damage); // Deal damage to the enemy
         }
 
