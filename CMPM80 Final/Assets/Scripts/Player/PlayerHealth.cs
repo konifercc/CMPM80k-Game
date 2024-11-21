@@ -38,8 +38,9 @@ public class PlayerHealth : MonoBehaviour
         playerHealth = Mathf.Clamp(playerHealth, minHealth, maxHealth);
         if (playerHealth <= 0 && !isRespawning)
         {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            //string currentSceneName = SceneManager.GetActiveScene().name;
+            //SceneManager.LoadScene(currentSceneName);
+            StartCoroutine(gamecontroller.Respawn(0.5f));
         }
     }
 
@@ -50,6 +51,10 @@ public class PlayerHealth : MonoBehaviour
         //Debug.Log(playerHealth);
     }
 
+    public void AddHealth(float healthadd)
+    {
+        playerHealth += healthadd;  
+    }
     public void SetMaxHealth()
     {
         playerHealth = maxHealth;

@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScenes/TutorialMenu.unity
     guid: cef1850cf18091e4bb58671a3bd83668
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EnemyTest.unity
     guid: 84ef6799f5b6d344fb3d2994ea40fd00
   m_configObjects:
