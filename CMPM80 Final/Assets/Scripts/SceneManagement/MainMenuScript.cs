@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Unity.UI;
+using UnityEngine.UI;
 using System.Collections;
+
 
 public class MainMenuScript : MonoBehaviour
 {

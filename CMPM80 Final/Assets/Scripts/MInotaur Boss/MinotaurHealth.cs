@@ -6,6 +6,7 @@ public class MinotaurHealth : MonoBehaviour
     private float currentHealth;
 
     private Animator animator;
+    public GameObject ground;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class MinotaurHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Minotaur defeated!");
+        Destroy(ground);
         if (animator != null)
         {
             animator.SetTrigger("Death"); // Trigger death animation
