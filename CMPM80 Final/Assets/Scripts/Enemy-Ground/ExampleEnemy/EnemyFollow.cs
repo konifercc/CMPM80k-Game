@@ -70,7 +70,6 @@ public class EnemyFollow : MonoBehaviour
         float nearestSpike = GetDistanceToNearestSpike();
         if (nearestSpike < 1f && !isJumping)
         {
-            Debug.Log("Jumping over spike");
             JumpSpike();
             isJumping = false;
         }
@@ -101,7 +100,7 @@ public class EnemyFollow : MonoBehaviour
         canMove = true;
         enemyPatrol.isKnockedBack = false;
     }
-    
+
 
     public void JumpSpike()
     {

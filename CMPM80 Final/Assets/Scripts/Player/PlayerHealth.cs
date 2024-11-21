@@ -47,7 +47,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         playerHealth -= damage;
-        Debug.Log(playerHealth);
+        //Debug.Log(playerHealth);
     }
 
     public void SetMaxHealth()
