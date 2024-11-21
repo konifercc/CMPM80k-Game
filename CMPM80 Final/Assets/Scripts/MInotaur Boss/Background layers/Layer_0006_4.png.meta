@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3bb3d96ff088a414086c87b880563cca
+guid: 9e639d51e7061dd4383bb512ed22e38c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2938682545266606049
-    second: Demon Prince Idle-4_0
+      213: -4913721107209408423
+    second: Layer_0006_4_0
+  - first:
+      213: -1305213797069370701
+    second: Layer_0006_4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Demon Prince Idle-4_0
+      name: Layer_0006_4_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 0
-        width: 33
-        height: 61
+        x: 0
+        y: 63
+        width: 902
+        height: 273
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1efb142843c48c820800000000000000
-      internalID: 2938682545266606049
+      spriteID: 950b17fdfa4fecbb0800000000000000
+      internalID: -4913721107209408423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_0006_4_1
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 63
+        width: 75
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bacdb587f2f2ede0800000000000000
+      internalID: -1305213797069370701
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Demon Prince Idle-4_0: 2938682545266606049
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
