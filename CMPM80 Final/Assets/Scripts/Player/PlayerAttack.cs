@@ -37,13 +37,14 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+
     void PerformSlash()
     {
         // Play the attack animation
         if (animator != null)
         {
             animator.SetTrigger("BladeUpwardSlash"); // Trigger the attack animation
-            Debug.Log("Attack animation triggered.");
+            //Debug.Log("Attack animation triggered.");
         }
 
         // Detect enemies and bosses within the rectangular attack area
@@ -51,7 +52,7 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (var targetCollider in targetsToDamage)
         {
-            Debug.Log("Entered Loop");
+           // Debug.Log("Entered Loop");
 
             // Apply knockback if the target has a KnockBack component
             KnockBack knockbackComponent = targetCollider.GetComponent<KnockBack>();
