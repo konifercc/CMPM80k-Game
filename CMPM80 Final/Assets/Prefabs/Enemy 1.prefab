@@ -194,7 +194,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.014239788, y: 0.10917199}
+  m_Offset: {x: 0.024936676, y: 0.095800996}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -204,7 +204,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2183447, y: 1.218344}
+  m_Size: {x: 1.389494, y: 1.245086}
   m_EdgeRadius: 0
 --- !u!50 &8692803722600685277
 Rigidbody2D:
@@ -221,7 +221,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -232,7 +232,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!95 &4213663577956262770
 Animator:
   serializedVersion: 7
@@ -274,6 +274,7 @@ MonoBehaviour:
   knockBack: {fileID: 0}
   speed: 5
   isKnockedBack: 0
+  isFacingRight: 0
 --- !u!114 &3856870576309740522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,8 +330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 100
+  enemyPatrol: {fileID: 0}
+  speed: 5
   distanceToPlayer: 0
+  followDistance: 5
+  isJumping: 0
 --- !u!1 &9054463493737797734
 GameObject:
   m_ObjectHideFlags: 0
