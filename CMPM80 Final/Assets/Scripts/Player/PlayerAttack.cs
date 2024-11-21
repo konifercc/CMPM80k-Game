@@ -73,7 +73,7 @@ public class PlayerAttack : MonoBehaviour
             }
 
             // Apply damage to bosses
-            MinotaurBehavior boss = targetCollider.GetComponent<MinotaurBehavior>();
+            MinotaurHealth boss = targetCollider.GetComponent<MinotaurHealth>();
             if (boss != null)
             {
                 boss.TakeDamage(attackDamage); // Use dynamic damage value
