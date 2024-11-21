@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hell_background_0: -8698646167624602147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
