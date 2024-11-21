@@ -27,7 +27,7 @@ public class Fireball : MonoBehaviour
         }
 
         // Check if the object hit is a boss (e.g., Minotaur)
-        MinotaurBehavior boss = collision.gameObject.GetComponent<MinotaurBehavior>();
+        MinotaurHealth boss = collision.gameObject.GetComponent<MinotaurHealth>();
         if (boss != null)
         {
             boss.TakeDamage(damage); // Deal damage to the boss
@@ -46,7 +46,7 @@ public class Fireball : MonoBehaviour
         }
 
         // Check if the object hit is a boss (e.g., Minotaur)
-        MinotaurBehavior boss = collider.gameObject.GetComponent<MinotaurBehavior>();
+        MinotaurHealth boss = collider.gameObject.GetComponent<MinotaurHealth>();
         if (boss != null)
         {
             boss.TakeDamage(damage); // Deal damage to the boss
