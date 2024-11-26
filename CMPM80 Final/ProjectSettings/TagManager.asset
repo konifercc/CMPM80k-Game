@@ -13,6 +13,7 @@ TagManager:
   - PlayerHitBox
   - Spells
   - SpikeHitBox
+  - ManaBarTag
   layers:
   - Default
   - TransparentFX

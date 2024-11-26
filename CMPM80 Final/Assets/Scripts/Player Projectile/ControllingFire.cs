@@ -7,22 +7,46 @@ public class ControllingFire : MonoBehaviour
     [SerializeField] private Transform fireballSpawnPoint; // Spawn point for the fireball
     [SerializeField] private float fireballSpeed = 10f; // Speed of the fireball
     [SerializeField] private float fireballCooldown = 0.5f; // Cooldown between fireballs
+    [SerializeField] private float fireballManaCost = 20f; // Mana cost to shoot the fireball
 
     private float _lastFireballTime; // Tracks the last time a fireball was shot
+    private PlayerMana playerMana; // Reference to the PlayerMana script
+
+    private void Awake()
+    {
+        // Find the PlayerMana script (assuming it’s attached to the same GameObject or Player)
+        playerMana = GetComponent<PlayerMana>();
+
+        // Ensure PlayerMana exists
+        if (playerMana == null)
+        {
+            Debug.LogError("PlayerMana script not found on the player. Please attach PlayerMana to the player GameObject.");
+        }
+    }
 
     private void Update()
     {
         // Fireball shooting input
         if (Input.GetKeyDown(KeyCode.X)) // Replace 'X' with your preferred key
         {
-            ShootFireball();
+            TryShootFireball();
         }
     }
 
-    private void ShootFireball()
+    private void TryShootFireball()
     {
+        // Check if there's enough mana to cast the fireball
+        if (playerMana != null && playerMana.playerMana < fireballManaCost)
+        {
+            // Do nothing if there's not enough mana
+            return;
+        }
+
         // Enforce cooldown
         if (Time.time - _lastFireballTime < fireballCooldown) return;
+
+        // Deduct mana cost
+        playerMana.UseMana(fireballManaCost);
 
         // Update the cooldown timer
         _lastFireballTime = Time.time;
