@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerAttack : MonoBehaviour
 
     private Animator animator;
     private float timeBtwAttack;
+
+    private float buffTimer = 10f;
 
     void Start()
     {
@@ -86,6 +89,18 @@ public class PlayerAttack : MonoBehaviour
     {
         attackDamage = newDamage;
         Debug.Log("Attack damage updated to: " + attackDamage);
+    }
+
+    public void buffAttack(float buffAmount){
+        
+        StartCoroutine(changeAttack(buffAmount));
+        
+    }
+
+    IEnumerator changeAttack(float buffAmount){
+        attackDamage += buffAmount;
+        yield return new WaitForSeconds(5f);
+        attackDamage -= buffAmount;
     }
 
     void OnDrawGizmosSelected()

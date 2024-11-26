@@ -6,6 +6,8 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     private bool menuActive;
     public ItemSlot[] itemSlot;
+
+    public itemSO[] itemSOs;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +28,16 @@ public class InventoryManager : MonoBehaviour
             InventoryMenu.SetActive(true);
             menuActive = true;
         }
+    }
+
+    public bool useItem(string itemName){
+        for(int i = 0; i < itemSOs.Length; i++){
+            if (itemSOs[i].itemName == itemName){
+                bool usable = itemSOs[i].UseItem();
+                return usable;
+            }
+        }
+        return false;
     }
 
     public int AddItem(string itemName, int quantity, Sprite sprite, string itemDescription){
