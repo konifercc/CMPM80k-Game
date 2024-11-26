@@ -302,8 +302,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMinHealth: 0
-  enemyMaxHealth: 100
-  enemyHealth: 100
+  enemyMaxHealth: 50
+  enemyHealth: 50
 --- !u!114 &7165100273128797512
 MonoBehaviour:
   m_ObjectHideFlags: 0
