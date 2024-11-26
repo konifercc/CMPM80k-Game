@@ -4,18 +4,35 @@ public class Fireball : MonoBehaviour
 {
     [SerializeField] private float damage = 10f; // Default damage value
     [SerializeField] private float lifetime = 3f; // Lifetime of the fireball in seconds
+    [SerializeField] private float manaCost; // Mana cost to cast the fireball
     public GameObject particle;
+
+    private PlayerMana playerMana; // Reference to the PlayerMana script
 
     private void Start()
     {
-        // Schedule the fireball to be destroyed after its lifetime
+        // Find the PlayerMana script (assuming it's attached to the same GameObject or Player)
+        playerMana = Object.FindFirstObjectByType<PlayerMana>();
+
+        // Destroy the fireball after its lifetime
         Destroy(gameObject, lifetime);
     }
 
-    // Public method to set the fireball's damage
-    public void SetDamage(float newDamage)
+    public void TryShootFireball(GameObject fireballPrefab, Transform firePoint)
     {
-        damage = newDamage;
+        // Check if the player has enough mana
+        if (playerMana != null && playerMana.playerMana >= manaCost)
+        {
+            // Subtract mana and shoot the fireball
+            playerMana.UseMana(manaCost);
+
+            // Instantiate the fireball
+            Instantiate(fireballPrefab, firePoint.position, firePoint.rotation);
+        }
+        else
+        {
+            Debug.Log("Not enough mana to cast fireball!");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,7 +59,6 @@ public class Fireball : MonoBehaviour
     {
         // Check if the object hit is an enemy
         EnemyHealth enemy = collider.gameObject.GetComponent<EnemyHealth>();
-        
         if (enemy != null)
         {
             Instantiate(particle, transform.position, Quaternion.identity);
