@@ -49,6 +49,8 @@ MonoBehaviour:
   itemName: CashFlow
   quantity: 1
   sprite: {fileID: 6582046967323461550, guid: 274d64617113287499ed1c4165d1d8f3, type: 3}
+  itemDescription: 'A coin used by shops nearby. Many merchants accept this form
+    of currency to exchange for different items. '
 --- !u!61 &8136508224222789902
 BoxCollider2D:
   m_ObjectHideFlags: 0
