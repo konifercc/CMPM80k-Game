@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EnemyTest.unity
     guid: 84ef6799f5b6d344fb3d2994ea40fd00
+  - enabled: 1
+    path: Assets/Scenes/INventoryTest.unity
+    guid: bd0f0b5555d098f479f68297ec7ac2cf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
