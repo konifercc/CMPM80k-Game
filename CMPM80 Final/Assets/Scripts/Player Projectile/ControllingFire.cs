@@ -56,11 +56,13 @@ public class ControllingFire : MonoBehaviour
 
         // Set the fireball's direction and velocity
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
+        Rigidbody2D rbplayer = GetComponent<Rigidbody2D>();
+        float currentPlayerSpeed = rbplayer.linearVelocity.magnitude;
         if (rb != null)
         {
             // Determine direction based on player's localScale.x
             Vector2 fireballDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
-            rb.linearVelocity = fireballDirection * fireballSpeed;
+            rb.linearVelocity = fireballDirection * (fireballSpeed + currentPlayerSpeed);
 
             // Optional: Flip fireball sprite if moving left
             if (transform.localScale.x < 0)

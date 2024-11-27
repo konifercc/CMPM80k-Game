@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 356294d16b077f040a38201631e2c9a5
+guid: d1a7876490eb3be4f9fe6ad2bec60370
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4078897385023307664
-    second: Groundcenter_0
+      213: -4639971258587910174
+    second: Bottle3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Groundcenter_0
+      name: Bottle3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 6
+        y: 6
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09f759d8f872b9830800000000000000
-      internalID: 4078897385023307664
+      spriteID: 2ef68d359b28b9fb0800000000000000
+      internalID: -4639971258587910174
       vertices: []
       indices: 
       edges: []

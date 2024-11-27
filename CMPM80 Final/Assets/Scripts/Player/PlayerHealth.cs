@@ -20,9 +20,12 @@ public class PlayerHealth : MonoBehaviour
 
     private void Awake()
     {
-        //Debug.Log("started");
-        gamecontroller = GetComponent<GameController>();
-        healthBar = GameObject.FindWithTag("HealthBarTag").GetComponent<HealthBarScript>();
+        Debug.Log("started");
+        if(gamecontroller == null)
+        {
+            gamecontroller = GetComponent<GameController>();
+        }
+        //healthBar = GameObject.FindWithTag("HealthBarTag").GetComponent<HealthBarScript>();
     }
     void Start()
     {

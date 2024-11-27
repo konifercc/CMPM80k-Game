@@ -55,7 +55,7 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (var targetCollider in targetsToDamage)
         {
-           // Debug.Log("Entered Loop");
+            Debug.Log("Entered Loop");
 
             // Apply knockback if the target has a KnockBack component
             KnockBack knockbackComponent = targetCollider.GetComponent<KnockBack>();
@@ -67,6 +67,22 @@ public class PlayerAttack : MonoBehaviour
                 knockbackComponent.ApplyKnockback(knockbackDirection, knockbackForce);
             }
 
+            KnockBackF knockbackComponentF = targetCollider.GetComponent<KnockBackF>();
+            if (knockbackComponentF != null)
+            {
+                Debug.Log("HAAWHAT THE FUYJKC");
+                // Calculate knockback direction (from player to target)
+                Vector2 knockbackDirection = (targetCollider.transform.position - transform.position).normalized;
+                // Apply knockback with direction and force
+                knockbackComponentF.ApplyKnockback(knockbackDirection, knockbackForce);
+            }
+
+            EnemyFHealth enemyF = targetCollider.GetComponent<EnemyFHealth>();
+            if (enemyF != null)
+            {
+                enemyF.TakeDamageF(50);
+                continue;
+            }
             // Apply damage to enemies
             EnemyHealth enemy = targetCollider.GetComponent<EnemyHealth>();
             if (enemy != null)
