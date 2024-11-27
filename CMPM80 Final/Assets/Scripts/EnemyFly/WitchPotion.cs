@@ -1,10 +1,11 @@
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class WitchPotion : MonoBehaviour
 {
     [SerializeField] private float Damage = 50f;
     [SerializeField] private float lifetime = 1f;
-    [SerializeField] public float speed = 5f;
+    [SerializeField] public float speed = 7f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,4 +34,34 @@ public class WitchPotion : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
+
+
+    /*
+    private void HandleCollision(GameObject target)
+    {
+        // Check if the target has an EnemyHealth component and deal damage
+        EnemyHealth enemy = target.GetComponent<EnemyHealth>();
+        if (enemy != null)
+        {
+            Instantiate(particle, transform.position, Quaternion.identity); // Spawn particle effect
+            enemy.TakeDamageE(damage); // Deal damage to the enemy
+        }
+
+        // Check if the target has a MinotaurHealth component and deal damage
+        MinotaurHealth boss = target.GetComponent<MinotaurHealth>();
+        if (boss != null)
+        {
+            Instantiate(particle, transform.position, Quaternion.identity); // Spawn particle effect
+            boss.TakeDamage(damage); // Deal damage to the boss
+        }
+
+        // Destroy the fireball after hitting something
+        Destroy(gameObject);
+    }
+    */
 }

@@ -33,6 +33,13 @@ public class Fireball : MonoBehaviour
             enemy.TakeDamageE(damage); // Deal damage to the enemy
         }
 
+        EnemyFHealth enemyF = target.GetComponent<EnemyFHealth>();
+        if (enemyF != null)
+        {
+            Instantiate(particle, transform.position, Quaternion.identity); // Spawn particle effect
+            enemyF.TakeDamageF(damage); // Deal damage to the enemy
+        }
+
         // Check if the target has a MinotaurHealth component and deal damage
         MinotaurHealth boss = target.GetComponent<MinotaurHealth>();
         if (boss != null)

@@ -1,4 +1,8 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEditor.Tilemaps;
+using UnityEditor;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
@@ -9,13 +13,16 @@ public class EnemyShoot : MonoBehaviour
     private bool flipOnShoot = false;
 
     public EnemyFly enemyFly;
+    public Animator anim;
     [SerializeField] private Transform poisonSpawnPointL;
     [SerializeField] private Transform poisonSpawnPointR;
     [SerializeField] private GameObject poisonPrefab;
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         enemyFly = GetComponent<EnemyFly>();
+        anim.Play("FlyingEnemyMove");
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -30,6 +37,8 @@ public class EnemyShoot : MonoBehaviour
         {
             if (hit.CompareTag("PlayerHitBox") && Time.time > nextFireTime)
             {
+                anim.Play("FlyingShot");
+                Invoke("returnToMoveAnim", 0.3f);
                 Vector3 direction = (hit.transform.position - transform.position).normalized;
                 FacePlayer(direction);
                 Shoot(direction);
@@ -63,6 +72,9 @@ public class EnemyShoot : MonoBehaviour
         else
         {
             poison = Instantiate(poisonPrefab, poisonSpawnPointL.position, poisonSpawnPointL.rotation);
+            Vector3 localScale = poison.transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
         }
         
         //set speed and direction of the poison, BUT ADD IT TO THE ENEMY CURRENT SPEED
@@ -89,5 +101,9 @@ public class EnemyShoot : MonoBehaviour
         enemyFly.isFacingRightF = !enemyFly.isFacingRightF;
     }
 
+    private void returnToMoveAnim()
+    {
+        anim.Play("FlyingEnemyMove");
+    }
 
 }

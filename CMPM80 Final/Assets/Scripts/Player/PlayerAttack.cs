@@ -80,7 +80,7 @@ public class PlayerAttack : MonoBehaviour
             EnemyFHealth enemyF = targetCollider.GetComponent<EnemyFHealth>();
             if (enemyF != null)
             {
-                enemyF.TakeDamageF(50);
+                enemyF.TakeDamageF(attackDamage);
                 continue;
             }
             // Apply damage to enemies
