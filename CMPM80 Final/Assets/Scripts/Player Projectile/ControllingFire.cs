@@ -7,20 +7,19 @@ public class ControllingFire : MonoBehaviour
     [SerializeField] private Transform fireballSpawnPoint; // Spawn point for the fireball
     [SerializeField] private float fireballSpeed = 10f; // Speed of the fireball
     [SerializeField] private float fireballCooldown = 0.5f; // Cooldown between fireballs
-    [SerializeField] private float fireballManaCost = 20f; // Mana cost to shoot the fireball
+    [SerializeField] private float fireballMinMana = 50f; // Minimum mana required to shoot fireball
 
     private float _lastFireballTime; // Tracks the last time a fireball was shot
     private PlayerMana playerMana; // Reference to the PlayerMana script
 
     private void Awake()
     {
-        // Find the PlayerMana script (assuming it’s attached to the same GameObject or Player)
+        // Attempt to get the PlayerMana script from the same GameObject
         playerMana = GetComponent<PlayerMana>();
 
-        // Ensure PlayerMana exists
         if (playerMana == null)
         {
-            Debug.LogError("PlayerMana script not found on the player. Please attach PlayerMana to the player GameObject.");
+            Debug.LogError("PlayerMana script not found on the player GameObject. Please attach it.");
         }
     }
 
@@ -35,38 +34,51 @@ public class ControllingFire : MonoBehaviour
 
     private void TryShootFireball()
     {
-        // Check if there's enough mana to cast the fireball
-        if (playerMana != null && playerMana.playerMana < fireballManaCost)
+        if (fireballPrefab == null)
         {
-            // Do nothing if there's not enough mana
+            Debug.LogError("FireballPrefab is not assigned in the Inspector!");
             return;
         }
 
-        // Enforce cooldown
-        if (Time.time - _lastFireballTime < fireballCooldown) return;
+        if (fireballSpawnPoint == null)
+        {
+            Debug.LogError("FireballSpawnPoint is not assigned in the Inspector!");
+            return;
+        }
 
-        // Deduct mana cost
-        playerMana.UseMana(fireballManaCost);
+        // Check if there is enough mana
+        if (!playerMana.UseMana(fireballMinMana))
+        {
+            Debug.Log("Not enough mana to shoot fireball! Minimum 50 mana required.");
+            return;
+        }
 
-        // Update the cooldown timer
+        // Check if cooldown has passed
+        if (Time.time - _lastFireballTime < fireballCooldown)
+        {
+            Debug.Log("Fireball is on cooldown!");
+            return;
+        }
+
         _lastFireballTime = Time.time;
 
-        // Instantiate the fireball at the spawn point
+        // Instantiate and launch the fireball
         GameObject fireball = Instantiate(fireballPrefab, fireballSpawnPoint.position, Quaternion.identity);
 
-        // Set the fireball's direction and velocity
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        if (rb == null)
         {
-            // Determine direction based on player's localScale.x
-            Vector2 fireballDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
-            rb.linearVelocity = fireballDirection * fireballSpeed;
+            Debug.LogError("Fireball prefab is missing a Rigidbody2D component!");
+            return;
+        }
 
-            // Optional: Flip fireball sprite if moving left
-            if (transform.localScale.x < 0)
-            {
-                fireball.transform.localScale = new Vector3(-fireball.transform.localScale.x, fireball.transform.localScale.y, fireball.transform.localScale.z);
-            }
+        Vector2 fireballDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+        rb.linearVelocity = fireballDirection * fireballSpeed;
+
+        // Flip the fireball if the player is facing left
+        if (transform.localScale.x < 0)
+        {
+            fireball.transform.localScale = new Vector3(-fireball.transform.localScale.x, fireball.transform.localScale.y, fireball.transform.localScale.z);
         }
     }
 }

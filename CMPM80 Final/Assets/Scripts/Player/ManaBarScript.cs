@@ -7,12 +7,24 @@ public class ManaBarScript : MonoBehaviour
 
     public void setMaxMana(float maxMana)
     {
+        if (manaSlider == null)
+        {
+            Debug.LogError("Mana Slider is not assigned!");
+            return;
+        }
+
         manaSlider.maxValue = maxMana;
         manaSlider.value = maxMana; // Initialize the slider value
     }
 
     public void setMana(float mana)
     {
+        if (manaSlider == null)
+        {
+            Debug.LogError("Mana Slider is not assigned!");
+            return;
+        }
+
         manaSlider.value = mana; // Update the slider value
     }
 }

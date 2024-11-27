@@ -2,76 +2,46 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    [SerializeField] private float damage = 10f; // Default damage value
-    [SerializeField] private float lifetime = 3f; // Lifetime of the fireball in seconds
-    [SerializeField] private float manaCost; // Mana cost to cast the fireball
-    public GameObject particle;
-
-    private PlayerMana playerMana; // Reference to the PlayerMana script
+    [Header("Fireball Settings")]
+    [SerializeField] private float damage = 10f; // Damage dealt by the fireball
+    [SerializeField] private float lifetime = 3f; // Lifetime of the fireball
+    [SerializeField] private GameObject particle; // Particle effect prefab
 
     private void Start()
     {
-        // Find the PlayerMana script (assuming it's attached to the same GameObject or Player)
-        playerMana = Object.FindFirstObjectByType<PlayerMana>();
-
-        // Destroy the fireball after its lifetime
+        // Destroy the fireball after its lifetime expires
         Destroy(gameObject, lifetime);
-    }
-
-    public void TryShootFireball(GameObject fireballPrefab, Transform firePoint)
-    {
-        // Check if the player has enough mana
-        if (playerMana != null && playerMana.playerMana >= manaCost)
-        {
-            // Subtract mana and shoot the fireball
-            playerMana.UseMana(manaCost);
-
-            // Instantiate the fireball
-            Instantiate(fireballPrefab, firePoint.position, firePoint.rotation);
-        }
-        else
-        {
-            Debug.Log("Not enough mana to cast fireball!");
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the object hit is an enemy
-        EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
-        if (enemy != null)
-        {
-            Instantiate(particle, transform.position, Quaternion.identity);
-            enemy.TakeDamageE(damage); // Deal damage to the enemy
-        }
-
-        // Check if the object hit is a boss (e.g., Minotaur)
-        MinotaurHealth boss = collision.gameObject.GetComponent<MinotaurHealth>();
-        if (boss != null)
-        {
-            boss.TakeDamage(damage); // Deal damage to the boss
-        }
-
-        Destroy(gameObject); // Destroy the fireball after collision
+        HandleCollision(collision.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        // Check if the object hit is an enemy
-        EnemyHealth enemy = collider.gameObject.GetComponent<EnemyHealth>();
+        HandleCollision(collider.gameObject);
+    }
+
+    private void HandleCollision(GameObject target)
+    {
+        // Check if the target has an EnemyHealth component and deal damage
+        EnemyHealth enemy = target.GetComponent<EnemyHealth>();
         if (enemy != null)
         {
-            Instantiate(particle, transform.position, Quaternion.identity);
+            Instantiate(particle, transform.position, Quaternion.identity); // Spawn particle effect
             enemy.TakeDamageE(damage); // Deal damage to the enemy
         }
 
-        // Check if the object hit is a boss (e.g., Minotaur)
-        MinotaurHealth boss = collider.gameObject.GetComponent<MinotaurHealth>();
+        // Check if the target has a MinotaurHealth component and deal damage
+        MinotaurHealth boss = target.GetComponent<MinotaurHealth>();
         if (boss != null)
         {
+            Instantiate(particle, transform.position, Quaternion.identity); // Spawn particle effect
             boss.TakeDamage(damage); // Deal damage to the boss
         }
 
-        Destroy(gameObject); // Destroy the fireball after collision
+        // Destroy the fireball after hitting something
+        Destroy(gameObject);
     }
 }

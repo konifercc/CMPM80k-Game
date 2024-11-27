@@ -1,93 +1,91 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMana : MonoBehaviour
 {
-    // Mana properties
-    public float playerMana { get; private set; }
-    public float maxMana { get; private set; } = 100.0f;
-    public float minMana { get; private set; } = 0.0f;
+    public float CurrentMana { get; private set; }
+    [SerializeField] private float maxMana = 100.0f; // Properly set in Inspector or here
+    public float MaxMana => maxMana; // Read-only property
+    public float MinMana { get; private set; } = 0.0f;
 
-    public ManaBarScript manaBar; // Reference to ManaBar UI script
-    public float manaRegenRate = 5.0f; // Mana regenerated per second
-    public float manaCost; // Mana cost per spell cast
-    public float regenDelay = 2.0f; // Time before regeneration starts
+    [Header("Mana Settings")]
+    [SerializeField] private float manaRegenRate = 5.0f; // Mana regenerated per second
+    [SerializeField] private float regenDelay = 2.0f; // Time before regeneration starts
+    [SerializeField] private float fireballMinMana = 50.0f; // Minimum mana required to shoot fireball
 
-    private bool isRegenerating = false; // Tracks if mana is regenerating
-    private float lastManaUseTime = 0f; // Tracks the time of the last mana use
+    [Header("UI Reference")]
+    [SerializeField] private ManaBarScript manaBar;
+
+    private bool isRegenerating = false;
+    private float lastManaUseTime = 0f;
 
     private void Awake()
     {
-        manaBar = GameObject.FindWithTag("ManaBarTag").GetComponent<ManaBarScript>();
+        if (manaBar == null)
+        {
+            manaBar = GameObject.FindWithTag("ManaBarTag")?.GetComponent<ManaBarScript>();
+        }
     }
 
     private void Start()
     {
-        playerMana = maxMana;
-        manaBar.setMaxMana(maxMana); // Initialize UI to max mana
+        CurrentMana = maxMana;
+        if (manaBar != null)
+        {
+            manaBar.setMaxMana(maxMana);
+        }
     }
 
     private void Update()
     {
-        // Update the mana bar UI
-        manaBar.setMana(playerMana);
+        manaBar?.setMana(CurrentMana);
 
-        // Clamp mana between min and max values
-        playerMana = Mathf.Clamp(playerMana, minMana, maxMana);
+        CurrentMana = Mathf.Clamp(CurrentMana, MinMana, maxMana);
 
-        // Detect "X" key press to cast a spell
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            UseMana(manaCost);
-        }
-
-        // Trigger regeneration if mana is not full and delay has passed
-        if (!isRegenerating && Time.time - lastManaUseTime >= regenDelay && playerMana < maxMana)
+        if (!isRegenerating && Time.time - lastManaUseTime >= regenDelay && CurrentMana < maxMana)
         {
             StartCoroutine(RegenerateMana());
         }
     }
 
-    public void UseMana(float manaCost)
+    public bool UseMana(float manaCost)
     {
-        // Check if enough mana is available
-        if (playerMana >= manaCost)
+        if (CurrentMana >= manaCost)
         {
-            playerMana -= manaCost; // Reduce mana
-            lastManaUseTime = Time.time; // Record the time of the mana use
-            isRegenerating = false; // Stop current regeneration
-            StopAllCoroutines(); // Cancel any active regeneration coroutines
+            CurrentMana -= manaCost;
+            lastManaUseTime = Time.time;
+            isRegenerating = false;
+            StopAllCoroutines();
+            return true;
         }
-        else
-        {
-            Debug.Log("Not enough mana!");
-        }
+
+        return false;
     }
 
     public void AddMana(float manaAmount)
     {
-        playerMana += manaAmount;
+        CurrentMana += manaAmount;
+        CurrentMana = Mathf.Clamp(CurrentMana, MinMana, maxMana);
     }
 
     public void SetMaxMana()
     {
-        playerMana = maxMana;
-        Debug.Log("Mana set to max");
+        CurrentMana = maxMana;
+        Debug.Log("Mana set to max.");
     }
 
-    private System.Collections.IEnumerator RegenerateMana()
+    private IEnumerator RegenerateMana()
     {
         isRegenerating = true;
 
-        // Regenerate mana over time
-        while (playerMana < maxMana)
+        while (CurrentMana < maxMana)
         {
-            playerMana += manaRegenRate * Time.deltaTime; // Increment mana
-            playerMana = Mathf.Min(playerMana, maxMana); // Clamp to max mana
-            manaBar.setMana(playerMana); // Update UI
-            yield return null; // Wait for next frame
+            CurrentMana += manaRegenRate * Time.deltaTime;
+            CurrentMana = Mathf.Min(CurrentMana, maxMana);
+            manaBar?.setMana(CurrentMana);
+            yield return null;
         }
 
-        isRegenerating = false; // Stop regenerating when full
+        isRegenerating = false;
     }
 }
