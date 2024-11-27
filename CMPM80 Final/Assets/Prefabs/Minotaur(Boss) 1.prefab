@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519444260873778721}
-  - component: {fileID: 4316856418976303553}
+  - component: {fileID: 6555419553317282957}
   m_Layer: 11
   m_Name: Axe
   m_TagString: EnemyTag
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5872422654055322730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &4316856418976303553
+--- !u!61 &6555419553317282957
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,7 +66,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 8.352637, y: 1.300625}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.859129, y: 3.2671444}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &5929302228395952928
 GameObject:
@@ -234,6 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  ground: {fileID: 0}
 --- !u!61 &3327990691763130905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -310,4 +311,4 @@ MonoBehaviour:
   damageAmount: 20
   attackCooldown: 1.5
   colliderCooldown: 1
-  attackCollider: {fileID: 4316856418976303553}
+  attackCollider: {fileID: 6555419553317282957}
