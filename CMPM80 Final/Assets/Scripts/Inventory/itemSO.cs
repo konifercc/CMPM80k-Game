@@ -14,8 +14,10 @@ public class itemSO : ScriptableObject
 
     public bool UseItem(){
         if(statToChange == StatToChange.health){
+            Debug.Log("healed");
             PlayerHealth playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
             playerHealth.AddHealth(amountToChangeStat);
+            
             return true;
         }
         if(statToChange == StatToChange.attack){

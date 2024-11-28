@@ -115,7 +115,7 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator changeAttack(float buffAmount){
         attackDamage += buffAmount;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(30f);
         attackDamage -= buffAmount;
     }
 

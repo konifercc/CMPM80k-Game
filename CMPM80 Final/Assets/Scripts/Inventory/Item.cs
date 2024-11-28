@@ -8,11 +8,15 @@ public class Item : MonoBehaviour
     
     [TextArea]
     [SerializeField] private string itemDescription;
+    private bool pickedUp = false;
 
     private InventoryManager inventoryManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(pickedUp){
+            Destroy(gameObject);
+        }
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
@@ -31,6 +35,7 @@ public class Item : MonoBehaviour
         Debug.Log(col.gameObject.tag);
         if (col.gameObject.tag == "PlayerTag"){
             int leftOverItems = inventoryManager.AddItem(itemName, quantity, sprite, itemDescription);
+            pickedUp = true;
             if (leftOverItems <= 0){
                 Destroy(gameObject);
             }

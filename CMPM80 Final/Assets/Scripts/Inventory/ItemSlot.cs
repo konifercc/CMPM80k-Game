@@ -78,6 +78,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
         if (itemSelected){
             bool usable = inventoryManager.useItem(itemName);
+            Debug.Log(itemName);
             this.quantity -=1;
             isFull = false;
             quantityText.text = this.quantity.ToString();
