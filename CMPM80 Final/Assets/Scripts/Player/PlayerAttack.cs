@@ -40,14 +40,12 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-
     void PerformSlash()
     {
         // Play the attack animation
         if (animator != null)
         {
             animator.SetTrigger("BladeUpwardSlash"); // Trigger the attack animation
-            //Debug.Log("Attack animation triggered.");
         }
 
         // Detect enemies and bosses within the rectangular attack area
@@ -61,19 +59,14 @@ public class PlayerAttack : MonoBehaviour
             KnockBack knockbackComponent = targetCollider.GetComponent<KnockBack>();
             if (knockbackComponent != null)
             {
-                // Calculate knockback direction (from player to target)
                 Vector2 knockbackDirection = (targetCollider.transform.position - transform.position).normalized;
-                // Apply knockback with direction and force
                 knockbackComponent.ApplyKnockback(knockbackDirection, knockbackForce);
             }
 
             KnockBackF knockbackComponentF = targetCollider.GetComponent<KnockBackF>();
             if (knockbackComponentF != null)
             {
-                Debug.Log("HAAWHAT THE FUYJKC");
-                // Calculate knockback direction (from player to target)
                 Vector2 knockbackDirection = (targetCollider.transform.position - transform.position).normalized;
-                // Apply knockback with direction and force
                 knockbackComponentF.ApplyKnockback(knockbackDirection, knockbackForce);
             }
 
@@ -83,19 +76,27 @@ public class PlayerAttack : MonoBehaviour
                 enemyF.TakeDamageF(attackDamage);
                 continue;
             }
-            // Apply damage to enemies
+
             EnemyHealth enemy = targetCollider.GetComponent<EnemyHealth>();
             if (enemy != null)
             {
-                enemy.TakeDamageE(attackDamage); // Use dynamic damage value
-                continue; // Skip further checks if it's an enemy
+                enemy.TakeDamageE(attackDamage);
+                continue;
             }
 
-            // Apply damage to bosses
             MinotaurHealth boss = targetCollider.GetComponent<MinotaurHealth>();
             if (boss != null)
             {
-                boss.TakeDamage(attackDamage); // Use dynamic damage value
+                boss.TakeDamage(attackDamage);
+                continue;
+            }
+
+            // Add logic for DemonHealth
+            DemonHealth demon = targetCollider.GetComponent<DemonHealth>();
+            if (demon != null)
+            {
+                demon.TakeDamage(attackDamage);
+                continue;
             }
         }
     }
@@ -107,13 +108,13 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log("Attack damage updated to: " + attackDamage);
     }
 
-    public void buffAttack(float buffAmount){
-        
+    public void buffAttack(float buffAmount)
+    {
         StartCoroutine(changeAttack(buffAmount));
-        
     }
 
-    IEnumerator changeAttack(float buffAmount){
+    IEnumerator changeAttack(float buffAmount)
+    {
         attackDamage += buffAmount;
         yield return new WaitForSeconds(30f);
         attackDamage -= buffAmount;

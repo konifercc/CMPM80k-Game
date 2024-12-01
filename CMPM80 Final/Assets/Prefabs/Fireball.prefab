@@ -176,9 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6738e24d4e0d5b4a93a5575b951b0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 15
   lifetime: 3
-  manaCost: 25
   particle: {fileID: 7230888878944492398, guid: ef92a7f9b9fc6934caead14d978cd392, type: 3}
 --- !u!95 &5316139837690661746
 Animator:

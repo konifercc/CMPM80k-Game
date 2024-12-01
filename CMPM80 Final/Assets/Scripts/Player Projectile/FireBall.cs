@@ -48,6 +48,14 @@ public class Fireball : MonoBehaviour
             boss.TakeDamage(damage); // Deal damage to the boss
         }
 
+        // Check if the target has a DemonHealth component and deal damage
+        DemonHealth demon = target.GetComponent<DemonHealth>();
+        if (demon != null)
+        {
+            Instantiate(particle, transform.position, Quaternion.identity); // Spawn particle effect
+            demon.TakeDamage(damage); // Deal damage to the demon
+        }
+
         // Destroy the fireball after hitting something
         Destroy(gameObject);
     }
