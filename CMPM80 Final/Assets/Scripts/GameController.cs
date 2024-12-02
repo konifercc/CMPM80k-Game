@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 
@@ -15,6 +16,14 @@ public class GameController : MonoBehaviour
     float xScale;
     public bool isPaused;
 
+    public AudioSource audioSource1;
+    public AudioSource audioSource3;
+    public AudioSource audioSource4;
+
+    public AudioClip deathsound;
+    public AudioClip jumpSound;
+    public AudioClip landSound;
+    public AudioClip runSound;
 
     private void Start()
     {
@@ -26,6 +35,11 @@ public class GameController : MonoBehaviour
         mainMenuScript = GetComponent<MainMenuScript>();
         isPaused = false;
         pauseMenu.SetActive(false);
+
+        //audioSource1 = GameObject.FindGameObjectWithTag("JumpSound").GetComponent<AudioSource>();
+        //audioSource2 = GameObject.FindGameObjectWithTag("LandSound").GetComponent<AudioSource>();
+        //audioSource3 = GameObject.FindGameObjectWithTag("RunSound").GetComponent<AudioSource>();
+        //audioSource4 = GameObject.FindGameObjectWithTag("DeathSound").GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -51,6 +65,7 @@ public class GameController : MonoBehaviour
 
     public IEnumerator Respawn(float respawnCooldown)
     {
+        playDeath();
         playerhealth.isRespawning = true;
         playerhealth.SetMaxHealth();
         rb.linearVelocity = new Vector2(0, 0);
@@ -90,5 +105,33 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void playDeath()
+    {
 
+        if (!audioSource4.isPlaying)
+        {
+            audioSource4.PlayOneShot(deathsound);
+        }
+    }
+
+    public void playJump()
+    {
+        audioSource1.PlayOneShot(jumpSound);
+    }
+
+
+    public void playRun()
+    {
+        audioSource3.clip = runSound;
+        audioSource3.loop = true;
+        if (!audioSource3.isPlaying)
+        {
+            audioSource3.Play();
+        }
+    }
+
+    public void stopRun()
+    {
+        audioSource3.Stop();
+    }
 }

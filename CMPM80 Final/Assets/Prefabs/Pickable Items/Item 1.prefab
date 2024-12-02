@@ -50,7 +50,7 @@ MonoBehaviour:
   quantity: 1
   sprite: {fileID: 4179822705786632669, guid: ae465b5b85369004da8df8d45e107c6d, type: 3}
   itemDescription: A shard dropped from the scales of a dragon. When used, increases
-    your attack for 30 seconds.
+    your attack for 30 seconds. Double click on it in the menu to use.
 --- !u!61 &8136508224222789902
 BoxCollider2D:
   m_ObjectHideFlags: 0

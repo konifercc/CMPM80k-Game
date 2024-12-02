@@ -17,8 +17,8 @@ public class SceneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(nextPlayTime);
-        Debug.Log(Time.time);
+        //Debug.Log(nextPlayTime);
+        // Debug.Log(Time.time);
         if (Time.time >= nextPlayTime)
         {
             PlayAmbientSound();

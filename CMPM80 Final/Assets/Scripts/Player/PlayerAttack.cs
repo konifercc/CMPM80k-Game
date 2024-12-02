@@ -10,15 +10,16 @@ public class PlayerAttack : MonoBehaviour
     public float knockbackForce = 15f;               // Knockback force applied to the enemy or boss
     public float attackDamage = 20f;                 // Default damage value (modifiable)
 
-    private Animator animator;
+    public Animator animator;
     private float timeBtwAttack;
 
     private float buffTimer = 10f;
 
     void Start()
     {
+        animator.SetLayerWeight(1, 0); // Set layer weight to 0 to disable it
         // Get the Animator component
-        animator = GetComponent<Animator>();
+        //animator = GameObject.FindGameObjectWithTag("PlayerHitBox").GetComponent<Animator>();
         if (animator == null)
         {
             Debug.LogError("Animator component not found on Player object.");
@@ -40,12 +41,19 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    void returnWeight()
+    {
+        animator.SetLayerWeight(1, 0); // Set layer weight back to 0 to disable it
+    }
     void PerformSlash()
     {
         // Play the attack animation
         if (animator != null)
         {
-            animator.SetTrigger("BladeUpwardSlash"); // Trigger the attack animation
+            // Use CrossFade to ensure the attack animation cannot be interrupted
+            animator.SetLayerWeight(1, 1); // Set layer weight to 1 to enable it
+            animator.CrossFade("PlayerAttack", 0.1f, -1, 1);
+            Invoke("returnWeight", 0.5f);
         }
 
         // Detect enemies and bosses within the rectangular attack area

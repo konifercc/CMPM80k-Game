@@ -17,7 +17,7 @@ public class SceneChanges : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "PlayerTag"){
             //Debug.Log("portal");
-             SceneManager.LoadScene(sceneIndex);
+             SceneManager.LoadSceneAsync(sceneIndex);
              player.transform.position = travelLocation;
         }
     }

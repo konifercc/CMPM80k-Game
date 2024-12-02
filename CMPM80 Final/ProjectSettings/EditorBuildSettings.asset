@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EnemyTest.unity
     guid: 84ef6799f5b6d344fb3d2994ea40fd00
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/INventoryTest.unity
     guid: bd0f0b5555d098f479f68297ec7ac2cf
   - enabled: 1

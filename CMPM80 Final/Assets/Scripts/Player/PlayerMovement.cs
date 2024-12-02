@@ -9,8 +9,10 @@
 using System.Collections;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
+	public GameController gameController;
 	//Scriptable object which holds all the player's movement parameters. If you don't want to use it
 	//just paste in all the parameters, though you will need to manuly change all references in this script
 
@@ -33,9 +35,10 @@ public class PlayerMovement : MonoBehaviour
 	public bool IsWallJumping { get; private set; }
 	public bool IsSliding { get; private set; }
 	public bool isGrounded;
-	
-	//Timers (also all fields, could be private and a method returning a bool could be used)
-	public float LastOnGroundTime { get; private set; }
+	private bool isRunning;
+
+    //Timers (also all fields, could be private and a method returning a bool could be used)
+    public float LastOnGroundTime { get; private set; }
 	public float LastOnWallTime { get; private set; }
 	public float LastOnWallRightTime { get; private set; }
 	public float LastOnWallLeftTime { get; private set; }
@@ -74,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Start()
 	{
+		isRunning = false;
 		SetGravityScale(Data.gravityScale);
 		IsFacingRight = true;
 	}
@@ -89,19 +93,38 @@ public class PlayerMovement : MonoBehaviour
 		LastPressedJumpTime -= Time.deltaTime;
 		#endregion
 
+
 		#region INPUT HANDLER
 		_moveInput.x = Input.GetAxisRaw("Horizontal");
 		_moveInput.y = Input.GetAxisRaw("Vertical");
 
 		//anim.SetBool("isRunning", _moveInput.x != 0);
 
+
 		if (_moveInput.x != 0)
-			Turn();	
+		{
+            isRunning = true;
+            if (!IsJumping && !Input.GetKey(KeyCode.Space) && isGrounded)
+			{
+                gameController.playRun();
+            }
+            Turn();
+        }
+
+		if ((_moveInput.x == 0 && isRunning) || Input.GetKey(KeyCode.Space))
+		{
+			gameController.stopRun();
+        }
+	
 			//CheckDirectionToFace(_moveInput.x > 0);
 
 		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
-			OnJumpInput();
+			if (isGrounded || IsSliding)
+			{
+                gameController.playJump();
+            }
+            OnJumpInput();
         }
 
 		if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
@@ -113,6 +136,7 @@ public class PlayerMovement : MonoBehaviour
 		#region COLLISION CHECKS
 		if (!IsJumping)
 		{
+			//gameController.stopRun();
 			//Ground Check
 			if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping) //checks if set box overlaps with ground
 			{
@@ -278,6 +302,7 @@ public class PlayerMovement : MonoBehaviour
     #region RUN METHODS
     private void Run(float lerpAmount)
 	{
+
 		//Calculate the direction we want to move in and our desired velocity
 		float targetSpeed = _moveInput.x * Data.runMaxSpeed;
 		//We can reduce are control using Lerp() this smooths changes to are direction and speed

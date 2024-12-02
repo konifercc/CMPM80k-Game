@@ -6,7 +6,7 @@ public class BackFollow : MonoBehaviour
     public float parallaxEffect;
     private Vector3 initialPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         initialPos = transform.position;
     }

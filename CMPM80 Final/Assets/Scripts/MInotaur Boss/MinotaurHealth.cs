@@ -7,9 +7,16 @@ public class MinotaurHealth : MonoBehaviour
 
     private Animator animator;
     public GameObject ground;
+    public GameObject portal;
 
     private void Start()
     {
+        portal = GameObject.FindGameObjectWithTag("Portal");
+        portal.gameObject.SetActive(false);
+        if(portal == null)
+        {
+            Debug.LogError("Portal object not found.");
+        }
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
     }
@@ -38,6 +45,7 @@ public class MinotaurHealth : MonoBehaviour
         {
             animator.SetTrigger("Death"); // Trigger death animation
         }
+        portal.gameObject.SetActive(true);
 
         Destroy(gameObject, 1f); // Delay destruction to allow animation to play
     }

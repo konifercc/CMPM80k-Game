@@ -50,7 +50,7 @@ MonoBehaviour:
   quantity: 1
   sprite: {fileID: -3441566204023454670, guid: 78254147f42859f4890fb31c1cbcf842, type: 3}
   itemDescription: The souls of the dead come to grant you strength on your journey.
-    Plus 30 HP
+    Plus 30 HP. Double click on it in the menu to use.
 --- !u!61 &8136508224222789902
 BoxCollider2D:
   m_ObjectHideFlags: 0

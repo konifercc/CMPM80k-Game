@@ -6,6 +6,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     private bool menuActive;
     public ItemSlot[] itemSlot;
+    public PlayerHealth playerHealth;
 
     public itemSO[] itemSOs;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +23,7 @@ public class InventoryManager : MonoBehaviour
             Time.timeScale = 1;
             InventoryMenu.SetActive(false);
             menuActive = false;
+            playerHealth.updateHealthBar();
         }
         else if (Input.GetButtonDown("Inventory") && !menuActive){
             Time.timeScale = 0;

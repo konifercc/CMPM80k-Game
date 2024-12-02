@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+
+    public PlayerMovement playerMovement;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float playerHealth { get; private set; }
     public float maxHealth { get; private set; } = 100.0f;
@@ -16,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthBarScript healthBar;
     public GameController gamecontroller;
-
+    int i = 0;
 
     private void Awake()
     {
@@ -25,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             gamecontroller = GetComponent<GameController>();
         }
+
         //healthBar = GameObject.FindWithTag("HealthBarTag").GetComponent<HealthBarScript>();
     }
     void Start()
@@ -41,9 +45,15 @@ public class PlayerHealth : MonoBehaviour
         playerHealth = Mathf.Clamp(playerHealth, minHealth, maxHealth);
         if (playerHealth <= 0 && !isRespawning)
         {
+            if(i == 0)
+            {
+                gamecontroller.playDeath();
+                i++;
+            }
             //string currentSceneName = SceneManager.GetActiveScene().name;
             //SceneManager.LoadScene(currentSceneName);
             StartCoroutine(gamecontroller.Respawn(0.5f));
+            i = 0;
         }
     }
 
@@ -62,5 +72,10 @@ public class PlayerHealth : MonoBehaviour
     {
         playerHealth = maxHealth;
         Debug.Log("set to max health");
+    }
+
+    public void updateHealthBar()
+    {
+        healthBar.setHealth(playerHealth);
     }
 }
