@@ -19,6 +19,7 @@ TagManager:
   - RunSound
   - JumpSound
   - Portal
+  - PopUp
   layers:
   - Default
   - TransparentFX

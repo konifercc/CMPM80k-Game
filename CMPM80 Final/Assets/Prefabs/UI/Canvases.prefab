@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186384198525992432}
-  - component: {fileID: 3408853279025613640}
   m_Layer: 0
   m_Name: Canvases
   m_TagString: Untagged
@@ -36,19 +35,6 @@ Transform:
   - {fileID: 4262684397688656797}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3408853279025613640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5319251937705246432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694512c47ec28c747b19befe3b04a5a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectIndex: 1
 --- !u!1001 &5406604731090699121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,6 +479,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -290
       objectReference: {fileID: 0}
+    - target: {fileID: 4432053941529637459, guid: dd104d48ecbb53249a88c32dfa2391e7, type: 3}
+      propertyPath: itemSOs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432053941529637459, guid: dd104d48ecbb53249a88c32dfa2391e7, type: 3}
+      propertyPath: 'itemSOs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fd376cc34ad32784bba3d26cf0e8236c, type: 2}
     - target: {fileID: 4455860318489810511, guid: dd104d48ecbb53249a88c32dfa2391e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
