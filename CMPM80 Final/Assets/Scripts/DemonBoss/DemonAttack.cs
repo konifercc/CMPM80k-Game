@@ -30,19 +30,19 @@ public class DemonAttack : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-
-
+        // Ensure the attack collider starts disabled
+        if (attackCollider != null)
+        {
+            attackCollider.enabled = false;
+        }
     }
 
     public void StartAttack()
     {
         // Trigger attack animation if cooldown allows
-        if (Time.time - lastAttackTime >= attackCooldown)
+        if (Time.time - lastAttackTime >= attackCooldown && animator != null)
         {
-            if (animator != null)
-            {
-                animator.SetTrigger("Attack");
-            }
+            animator.SetTrigger("Attack");
             lastAttackTime = Time.time; // Reset attack cooldown timer
         }
     }
@@ -54,6 +54,7 @@ public class DemonAttack : MonoBehaviour
         {
             attackCollider.enabled = true;
             Debug.Log("[DEBUG] Attack collider enabled.");
+            Invoke(nameof(DisableAttackCollider), 0.5f); // Temporarily disable after 0.5 seconds
         }
     }
 
@@ -63,22 +64,22 @@ public class DemonAttack : MonoBehaviour
         if (attackCollider != null)
         {
             attackCollider.enabled = false;
-            Debug.Log("[DEBUG] Attack collider disabled.");
+            Debug.Log($"[DEBUG] {gameObject.name} - Attack collider disabled.");
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (attackCollider != null && attackCollider.enabled && collision.CompareTag("PlayerHitBox"))
         {
-            Debug.Log("[DEBUG] Collision detected with PlayerHitBox.");
+            Debug.Log($"[DEBUG] {gameObject.name} - Collision detected with PlayerHitBox.");
 
             if (Time.time - lastDamageTime >= colliderCooldown)
             {
                 PlayerHealth playerHealth = collision.GetComponentInParent<PlayerHealth>();
                 if (playerHealth != null)
                 {
-                    Debug.Log("[DEBUG] Calling TakeDamage on PlayerHealth.");
+                    Debug.Log($"[DEBUG] {gameObject.name} - Calling TakeDamage on PlayerHealth.");
                     playerHealth.TakeDamage(damageAmount);
                     lastDamageTime = Time.time;
                 }
