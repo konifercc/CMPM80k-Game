@@ -20,6 +20,7 @@ TagManager:
   - JumpSound
   - Portal
   - PopUp
+  - Canvases
   layers:
   - Default
   - TransparentFX
